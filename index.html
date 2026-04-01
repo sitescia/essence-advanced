@@ -392,231 +392,212 @@ A falta de confiança afeta muito mais do que seu sorriso — ela impacta as sua
             <!-- No Connecting Line needed for the new separated UI layout -->
             
             <!-- Step 1 -->
-<label class="block relative group cursor-pointer reveal-on-scroll">
-    <input type="checkbox" class="peer hidden">
-    <div class="relative z-10 p-8 bg-white rounded-[2.5rem] shadow-[0_8px_30px_rgba(0,0,0,0.04)] border border-outline-variant/10 overflow-hidden transition-all duration-700 hover:shadow-[0_20px_50px_rgba(194,167,122,0.12)] hover:-translate-y-2 peer-checked:shadow-[0_30px_60px_rgba(194,167,122,0.15)] peer-checked:-translate-y-2 peer-checked:border-primary/30">
+<!-- Step 1 Flip Card -->
+<div class="group h-[380px] sm:h-[400px] [perspective:1000px] cursor-pointer reveal-on-scroll">
+    <div class="relative w-full h-full transition-all duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
         
-        <div class="absolute -top-8 -right-4 font-headline text-[160px] leading-none text-primary opacity-[0.03] select-none pointer-events-none transition-all duration-1000 group-hover:scale-110 peer-checked:scale-110 peer-checked:opacity-[0.06] peer-checked:text-[#57441F]">
-            01
-        </div>
-
-        <div class="flex items-center gap-4 mb-6 relative z-10">
-            <div class="w-14 h-14 shrink-0 rounded-2xl bg-gradient-to-br from-[#FAF9F6] to-white flex flex-col items-center justify-center border border-outline-variant/20 shadow-sm group-hover:from-primary/10 group-hover:border-primary/30 peer-checked:from-primary peer-checked:border-primary transition-all duration-500">
-                <span class="material-symbols-outlined text-[26px] text-primary group-hover:scale-110 peer-checked:text-white transition-all duration-500" style="font-variation-settings: 'wght' 300;">biotech</span>
+        <!-- Front -->
+        <div class="absolute inset-0 w-full h-full [backface-visibility:hidden] [-webkit-backface-visibility:hidden] bg-white rounded-[2.5rem] shadow-[0_8px_30px_rgba(0,0,0,0.04)] border border-outline-variant/10 p-8 flex flex-col items-center text-center overflow-hidden">
+            
+            <div class="absolute top-10 -left-6 font-headline text-[160px] leading-none text-primary opacity-[0.03] select-none pointer-events-none transition-transform duration-1000 group-hover:scale-105">
+                01
             </div>
-            <div class="flex-1">
-                <span class="text-[9px] uppercase tracking-[0.25em] text-primary/80 font-bold block mb-1">Passo 01</span>
-                <h4 class="font-headline text-[20px] text-[#3C3C3C] leading-tight group-hover:text-primary peer-checked:text-primary transition-colors duration-300">Avaliação<br>Especializada</h4>
+            
+            <div class="w-16 h-16 shrink-0 rounded-2xl bg-gradient-to-br from-[#FAF9F6] to-white flex flex-col items-center justify-center border border-outline-variant/20 shadow-sm mb-6 mt-2 relative z-10 transition-transform duration-500 group-hover:border-primary/30">
+                <span class="material-symbols-outlined text-[32px] text-primary" style="font-variation-settings: 'wght' 300;">biotech</span>
             </div>
-        </div>
+            
+            <span class="text-[9px] uppercase tracking-[0.25em] text-primary/80 font-bold block mb-2 relative z-10">Passo 01</span>
+            <h4 class="font-headline text-[22px] text-[#3C3C3C] leading-tight mb-4 relative z-10">Avaliação<br>Especializada</h4>
+            
+            <p class="text-[14px] text-on-surface-variant font-light leading-relaxed relative z-10 px-2 line-clamp-3">
+                Realizamos uma avaliação completa com scanner intraoral digital.
+            </p>
 
-        <p class="text-[14px] text-on-surface-variant font-light leading-relaxed mb-6 relative z-10">
-            Realizamos uma avaliação completa com scanner intraoral digital.
-        </p>
-
-        <div class="peer-checked:hidden transition-all duration-500 flex items-center justify-between border-t border-outline-variant/10 pt-5 mt-auto relative z-10">
-            <span class="text-[10px] font-bold uppercase tracking-[0.2em] text-[#C2A77A] group-hover:text-primary transition-colors flex items-center gap-3">
-                Detalhes <span class="w-8 h-[1px] bg-[#C2A77A]/50 group-hover:w-12 group-hover:bg-primary transition-all duration-500 ease-out"></span>
-            </span>
-            <div class="w-8 h-8 rounded-full border border-primary/20 flex items-center justify-center group-hover:bg-primary group-hover:border-primary transition-colors duration-500">
-                <span class="material-symbols-outlined text-[16px] text-primary group-hover:text-white transition-colors duration-500">add</span>
-            </div>
-        </div>
-
-        <div class="grid grid-rows-[0fr] peer-checked:grid-rows-[1fr] transition-[grid-template-rows] duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] relative z-10">
-            <div class="overflow-hidden">
-                <div class="pt-6 border-t border-primary/10 opacity-0 peer-checked:opacity-100 transition-opacity duration-700 delay-150">
-                    <p class="text-[13px] text-on-surface-variant font-light leading-relaxed mb-4">
-                        Esse escaneamento minucioso permite capturar imagens extremamente precisas e planejar todo o tratamento com previsibilidade e segurança absoluta.
-                    </p>
-                    
-                    <div class="flex items-center justify-between pt-5 mt-2 border-t border-outline-variant/10">
-                        <span class="text-[10px] font-bold uppercase tracking-[0.2em] text-[#57441F] transition-colors flex items-center gap-3">
-                            Retrair <span class="w-8 h-[1px] bg-[#57441F]/30 hover:w-12 transition-all duration-500"></span>
-                        </span>
-                        <div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center hover:bg-primary/20 transition-colors">
-                            <span class="material-symbols-outlined text-[16px] text-[#57441F]">remove</span>
-                        </div>
-                    </div>
+            <div class="mt-auto relative z-10 flex items-center justify-center gap-2 text-[#C2A77A] group-hover:text-primary transition-colors">
+                <span class="text-[10px] font-bold uppercase tracking-[0.2em]">Saber mais</span>
+                <div class="w-6 h-6 rounded-full border border-primary/20 flex items-center justify-center group-hover:bg-primary transition-colors">
+                    <span class="material-symbols-outlined text-[14px] group-hover:text-white transition-colors">add</span>
                 </div>
             </div>
         </div>
-        
-        <div class="absolute bottom-0 left-0 right-0 h-1.5 bg-gradient-to-r from-primary/0 via-primary to-primary/0 opacity-0 peer-checked:opacity-100 transition-all duration-700 transform scale-x-50 peer-checked:scale-x-100"></div>
+
+        <!-- Back -->
+        <div class="absolute inset-0 w-full h-full [backface-visibility:hidden] [-webkit-backface-visibility:hidden] bg-gradient-to-br from-[#57441F] to-[#2D2310] rounded-[2.5rem] shadow-xl border border-[#C2A77A]/20 p-8 text-white [transform:rotateY(180deg)] flex flex-col items-center text-center justify-center">
+            <h4 class="font-headline text-[20px] text-[#C2A77A] mb-4">O que significa?</h4>
+            
+            <p class="text-[14px] text-white/90 font-light leading-relaxed mb-6">
+                Esse escaneamento minucioso permite capturar imagens precisas e planejar todo o tratamento com segurança absoluta, sem as antigas "massinhas" desconfortáveis.
+            </p>
+            
+            <div class="mt-auto relative z-10 flex items-center justify-center gap-2 text-[#C2A77A]/50">
+                <span class="text-[10px] font-bold uppercase tracking-[0.2em]">Voltar</span>
+                <span class="material-symbols-outlined text-[14px]">arrow_circle_left</span>
+            </div>
+            
+            <div class="absolute bottom-0 left-0 right-0 h-1.5 bg-gradient-to-r from-primary/0 via-primary to-primary/0 opacity-30"></div>
+        </div>
+
     </div>
-</label>
+</div>
 
 <!-- Step 2 -->
-<label class="block relative group cursor-pointer reveal-on-scroll" style="transition-delay: 150ms;">
-    <input type="checkbox" class="peer hidden">
-    <div class="relative z-10 p-8 bg-white rounded-[2.5rem] shadow-[0_8px_30px_rgba(0,0,0,0.04)] border border-outline-variant/10 overflow-hidden transition-all duration-700 hover:shadow-[0_20px_50px_rgba(194,167,122,0.12)] hover:-translate-y-2 peer-checked:shadow-[0_30px_60px_rgba(194,167,122,0.15)] peer-checked:-translate-y-2 peer-checked:border-primary/30">
+<!-- Step 2 Flip Card -->
+<div class="group h-[380px] sm:h-[400px] [perspective:1000px] cursor-pointer reveal-on-scroll" style="transition-delay: 150ms;">
+    <div class="relative w-full h-full transition-all duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
         
-        <div class="absolute -top-8 -right-4 font-headline text-[160px] leading-none text-primary opacity-[0.03] select-none pointer-events-none transition-all duration-1000 group-hover:scale-110 peer-checked:scale-110 peer-checked:opacity-[0.06] peer-checked:text-[#57441F]">
-            02
-        </div>
-
-        <div class="flex items-center gap-4 mb-6 relative z-10">
-            <div class="w-14 h-14 shrink-0 rounded-2xl bg-gradient-to-br from-[#FAF9F6] to-white flex flex-col items-center justify-center border border-outline-variant/20 shadow-sm group-hover:from-primary/10 group-hover:border-primary/30 peer-checked:from-primary peer-checked:border-primary transition-all duration-500">
-                <span class="material-symbols-outlined text-[26px] text-primary group-hover:scale-110 peer-checked:text-white transition-all duration-500" style="font-variation-settings: 'wght' 300;">architecture</span>
+        <!-- Front -->
+        <div class="absolute inset-0 w-full h-full [backface-visibility:hidden] [-webkit-backface-visibility:hidden] bg-white rounded-[2.5rem] shadow-[0_8px_30px_rgba(0,0,0,0.04)] border border-outline-variant/10 p-8 flex flex-col items-center text-center overflow-hidden">
+            
+            <div class="absolute top-10 -left-6 font-headline text-[160px] leading-none text-primary opacity-[0.03] select-none pointer-events-none transition-transform duration-1000 group-hover:scale-105">
+                02
             </div>
-            <div class="flex-1">
-                <span class="text-[9px] uppercase tracking-[0.25em] text-primary/80 font-bold block mb-1">Passo 02</span>
-                <h4 class="font-headline text-[20px] text-[#3C3C3C] leading-tight group-hover:text-primary peer-checked:text-primary transition-colors duration-300">Planejamento<br>Personalizado</h4>
+            
+            <div class="w-16 h-16 shrink-0 rounded-2xl bg-gradient-to-br from-[#FAF9F6] to-white flex flex-col items-center justify-center border border-outline-variant/20 shadow-sm mb-6 mt-2 relative z-10 transition-transform duration-500 group-hover:border-primary/30">
+                <span class="material-symbols-outlined text-[32px] text-primary" style="font-variation-settings: 'wght' 300;">architecture</span>
             </div>
-        </div>
+            
+            <span class="text-[9px] uppercase tracking-[0.25em] text-primary/80 font-bold block mb-2 relative z-10">Passo 02</span>
+            <h4 class="font-headline text-[22px] text-[#3C3C3C] leading-tight mb-4 relative z-10">Planejamento<br>Personalizado</h4>
+            
+            <p class="text-[14px] text-on-surface-variant font-light leading-relaxed relative z-10 px-2 line-clamp-3">
+                Cada caso é estudado e desenhado individualmente pelos especialistas.
+            </p>
 
-        <p class="text-[14px] text-on-surface-variant font-light leading-relaxed mb-6 relative z-10">
-            Cada caso é estudado e desenhado individualmente.
-        </p>
-
-        <div class="peer-checked:hidden transition-all duration-500 flex items-center justify-between border-t border-outline-variant/10 pt-5 mt-auto relative z-10">
-            <span class="text-[10px] font-bold uppercase tracking-[0.2em] text-[#C2A77A] group-hover:text-primary transition-colors flex items-center gap-3">
-                Detalhes <span class="w-8 h-[1px] bg-[#C2A77A]/50 group-hover:w-12 group-hover:bg-primary transition-all duration-500 ease-out"></span>
-            </span>
-            <div class="w-8 h-8 rounded-full border border-primary/20 flex items-center justify-center group-hover:bg-primary group-hover:border-primary transition-colors duration-500">
-                <span class="material-symbols-outlined text-[16px] text-primary group-hover:text-white transition-colors duration-500">add</span>
-            </div>
-        </div>
-
-        <div class="grid grid-rows-[0fr] peer-checked:grid-rows-[1fr] transition-[grid-template-rows] duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] relative z-10">
-            <div class="overflow-hidden">
-                <div class="pt-6 border-t border-primary/10 opacity-0 peer-checked:opacity-100 transition-opacity duration-700 delay-150">
-                    <p class="text-[13px] text-on-surface-variant font-light leading-relaxed mb-4">Definimos com exatidão:</p>
-                    <ul class="space-y-3 mb-5">
-                        <li class="flex items-start gap-2"><div class="mt-0.5 min-w-[16px]"><span class="material-symbols-outlined text-primary text-[14px] font-bold">done_all</span></div><span class="text-[13px] font-light text-on-surface-variant">Tipo de implante ideal</span></li>
-                        <li class="flex items-start gap-2"><div class="mt-0.5 min-w-[16px]"><span class="material-symbols-outlined text-primary text-[14px] font-bold">done_all</span></div><span class="text-[13px] font-light text-on-surface-variant">Necessidade de enxertos</span></li>
-                        <li class="flex items-start gap-2"><div class="mt-0.5 min-w-[16px]"><span class="material-symbols-outlined text-primary text-[14px] font-bold">done_all</span></div><span class="text-[13px] font-light text-on-surface-variant">Carga imediata</span></li>
-                        <li class="flex items-start gap-2"><div class="mt-0.5 min-w-[16px]"><span class="material-symbols-outlined text-primary text-[14px] font-bold">done_all</span></div><span class="text-[13px] font-light text-on-surface-variant">Estratégia cirúrgica</span></li>
-                    </ul>
-                    
-                    <div class="flex items-center justify-between pt-5 mt-2 border-t border-outline-variant/10">
-                        <span class="text-[10px] font-bold uppercase tracking-[0.2em] text-[#57441F] transition-colors flex items-center gap-3">
-                            Retrair <span class="w-8 h-[1px] bg-[#57441F]/30 hover:w-12 transition-all duration-500"></span>
-                        </span>
-                        <div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center hover:bg-primary/20 transition-colors">
-                            <span class="material-symbols-outlined text-[16px] text-[#57441F]">remove</span>
-                        </div>
-                    </div>
+            <div class="mt-auto relative z-10 flex items-center justify-center gap-2 text-[#C2A77A] group-hover:text-primary transition-colors">
+                <span class="text-[10px] font-bold uppercase tracking-[0.2em]">Saber mais</span>
+                <div class="w-6 h-6 rounded-full border border-primary/20 flex items-center justify-center group-hover:bg-primary transition-colors">
+                    <span class="material-symbols-outlined text-[14px] group-hover:text-white transition-colors">add</span>
                 </div>
             </div>
         </div>
-        <div class="absolute bottom-0 left-0 right-0 h-1.5 bg-gradient-to-r from-primary/0 via-primary to-primary/0 opacity-0 peer-checked:opacity-100 transition-all duration-700 transform scale-x-50 peer-checked:scale-x-100"></div>
+
+        <!-- Back -->
+        <div class="absolute inset-0 w-full h-full [backface-visibility:hidden] [-webkit-backface-visibility:hidden] bg-gradient-to-br from-[#57441F] to-[#2D2310] rounded-[2.5rem] shadow-xl border border-[#C2A77A]/20 p-8 text-white [transform:rotateY(180deg)] flex flex-col items-center justify-center text-left">
+            
+            <p class="text-[14px] text-[#C2A77A] font-light leading-relaxed mb-4 self-center font-medium">Definimos com exatidão:</p>
+            <ul class="space-y-3 mb-5 w-full">
+                <li class="flex items-start gap-2"><div class="mt-0.5 min-w-[16px]"><span class="material-symbols-outlined text-[#C2A77A] text-[16px] font-bold">check</span></div><span class="text-[13px] font-light text-white/90">Tipo de implante ideal</span></li>
+                <li class="flex items-start gap-2"><div class="mt-0.5 min-w-[16px]"><span class="material-symbols-outlined text-[#C2A77A] text-[16px] font-bold">check</span></div><span class="text-[13px] font-light text-white/90">Necessidade de enxertos</span></li>
+                <li class="flex items-start gap-2"><div class="mt-0.5 min-w-[16px]"><span class="material-symbols-outlined text-[#C2A77A] text-[16px] font-bold">check</span></div><span class="text-[13px] font-light text-white/90">Carga imediata</span></li>
+                <li class="flex items-start gap-2"><div class="mt-0.5 min-w-[16px]"><span class="material-symbols-outlined text-[#C2A77A] text-[16px] font-bold">check</span></div><span class="text-[13px] font-light text-white/90">Estratégia cirúrgica</span></li>
+            </ul>
+            
+            <div class="mt-auto relative z-10 flex items-center justify-center gap-2 text-[#C2A77A]/50 w-full">
+                <span class="text-[10px] font-bold uppercase tracking-[0.2em]">Voltar</span>
+                <span class="material-symbols-outlined text-[14px]">arrow_circle_left</span>
+            </div>
+            
+            <div class="absolute bottom-0 left-0 right-0 h-1.5 bg-gradient-to-r from-primary/0 via-primary to-primary/0 opacity-30"></div>
+        </div>
+
     </div>
-</label>
+</div>
 
 <!-- Step 3 -->
-<label class="block relative group cursor-pointer reveal-on-scroll" style="transition-delay: 300ms;">
-    <input type="checkbox" class="peer hidden">
-    <div class="relative z-10 p-8 bg-white rounded-[2.5rem] shadow-[0_8px_30px_rgba(0,0,0,0.04)] border border-outline-variant/10 overflow-hidden transition-all duration-700 hover:shadow-[0_20px_50px_rgba(194,167,122,0.12)] hover:-translate-y-2 peer-checked:shadow-[0_30px_60px_rgba(194,167,122,0.15)] peer-checked:-translate-y-2 peer-checked:border-primary/30">
+<!-- Step 3 Flip Card -->
+<div class="group h-[380px] sm:h-[400px] [perspective:1000px] cursor-pointer reveal-on-scroll" style="transition-delay: 300ms;">
+    <div class="relative w-full h-full transition-all duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
         
-        <div class="absolute -top-8 -right-4 font-headline text-[160px] leading-none text-primary opacity-[0.03] select-none pointer-events-none transition-all duration-1000 group-hover:scale-110 peer-checked:scale-110 peer-checked:opacity-[0.06] peer-checked:text-[#57441F]">
-            03
-        </div>
-
-        <div class="flex items-center gap-4 mb-6 relative z-10">
-            <div class="w-14 h-14 shrink-0 rounded-2xl bg-gradient-to-br from-[#FAF9F6] to-white flex flex-col items-center justify-center border border-outline-variant/20 shadow-sm group-hover:from-primary/10 group-hover:border-primary/30 peer-checked:from-primary peer-checked:border-primary transition-all duration-500">
-                <span class="material-symbols-outlined text-[26px] text-primary group-hover:scale-110 peer-checked:text-white transition-all duration-500" style="font-variation-settings: 'wght' 300;">dentistry</span>
+        <!-- Front -->
+        <div class="absolute inset-0 w-full h-full [backface-visibility:hidden] [-webkit-backface-visibility:hidden] bg-white rounded-[2.5rem] shadow-[0_8px_30px_rgba(0,0,0,0.04)] border border-outline-variant/10 p-8 flex flex-col items-center text-center overflow-hidden">
+            
+            <div class="absolute top-10 -left-6 font-headline text-[160px] leading-none text-primary opacity-[0.03] select-none pointer-events-none transition-transform duration-1000 group-hover:scale-105">
+                03
             </div>
-            <div class="flex-1">
-                <span class="text-[9px] uppercase tracking-[0.25em] text-primary/80 font-bold block mb-1">Passo 03</span>
-                <h4 class="font-headline text-[20px] text-[#3C3C3C] leading-tight group-hover:text-primary peer-checked:text-primary transition-colors duration-300">Procedimento<br>Cirúrgico</h4>
+            
+            <div class="w-16 h-16 shrink-0 rounded-2xl bg-gradient-to-br from-[#FAF9F6] to-white flex flex-col items-center justify-center border border-outline-variant/20 shadow-sm mb-6 mt-2 relative z-10 transition-transform duration-500 group-hover:border-primary/30">
+                <span class="material-symbols-outlined text-[32px] text-primary" style="font-variation-settings: 'wght' 300;">dentistry</span>
             </div>
-        </div>
+            
+            <span class="text-[9px] uppercase tracking-[0.25em] text-primary/80 font-bold block mb-2 relative z-10">Passo 03</span>
+            <h4 class="font-headline text-[22px] text-[#3C3C3C] leading-tight mb-4 relative z-10">Procedimento<br>Cirúrgico</h4>
+            
+            <p class="text-[14px] text-on-surface-variant font-light leading-relaxed relative z-10 px-2 line-clamp-3">
+                Técnicas modernas e equipamentos de ponta para sua intervenção.
+            </p>
 
-        <p class="text-[14px] text-on-surface-variant font-light leading-relaxed mb-6 relative z-10">
-            Técnicas modernas e equipamentos de ponta para sua intervenção.
-        </p>
-
-        <div class="peer-checked:hidden transition-all duration-500 flex items-center justify-between border-t border-outline-variant/10 pt-5 mt-auto relative z-10">
-            <span class="text-[10px] font-bold uppercase tracking-[0.2em] text-[#C2A77A] group-hover:text-primary transition-colors flex items-center gap-3">
-                Detalhes <span class="w-8 h-[1px] bg-[#C2A77A]/50 group-hover:w-12 group-hover:bg-primary transition-all duration-500 ease-out"></span>
-            </span>
-            <div class="w-8 h-8 rounded-full border border-primary/20 flex items-center justify-center group-hover:bg-primary group-hover:border-primary transition-colors duration-500">
-                <span class="material-symbols-outlined text-[16px] text-primary group-hover:text-white transition-colors duration-500">add</span>
-            </div>
-        </div>
-
-        <div class="grid grid-rows-[0fr] peer-checked:grid-rows-[1fr] transition-[grid-template-rows] duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] relative z-10">
-            <div class="overflow-hidden">
-                <div class="pt-6 border-t border-primary/10 opacity-0 peer-checked:opacity-100 transition-opacity duration-700 delay-150">
-                    <p class="text-[13px] text-on-surface-variant font-light leading-relaxed mb-4">
-                        Nos casos com indicação para carga imediata, o paciente já sai com a prótese instalada no mesmo dia.
-                    </p>
-                    <p class="text-[13px] text-on-surface-variant font-light leading-relaxed mb-2">
-                        Nos casos unitários, são utilizados lindos dentes provisórios estéticos.
-                    </p>
-                    
-                    <div class="flex items-center justify-between pt-5 mt-4 border-t border-outline-variant/10">
-                        <span class="text-[10px] font-bold uppercase tracking-[0.2em] text-[#57441F] transition-colors flex items-center gap-3">
-                            Retrair <span class="w-8 h-[1px] bg-[#57441F]/30 hover:w-12 transition-all duration-500"></span>
-                        </span>
-                        <div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center hover:bg-primary/20 transition-colors">
-                            <span class="material-symbols-outlined text-[16px] text-[#57441F]">remove</span>
-                        </div>
-                    </div>
+            <div class="mt-auto relative z-10 flex items-center justify-center gap-2 text-[#C2A77A] group-hover:text-primary transition-colors">
+                <span class="text-[10px] font-bold uppercase tracking-[0.2em]">Saber mais</span>
+                <div class="w-6 h-6 rounded-full border border-primary/20 flex items-center justify-center group-hover:bg-primary transition-colors">
+                    <span class="material-symbols-outlined text-[14px] group-hover:text-white transition-colors">add</span>
                 </div>
             </div>
         </div>
-        <div class="absolute bottom-0 left-0 right-0 h-1.5 bg-gradient-to-r from-primary/0 via-primary to-primary/0 opacity-0 peer-checked:opacity-100 transition-all duration-700 transform scale-x-50 peer-checked:scale-x-100"></div>
+
+        <!-- Back -->
+        <div class="absolute inset-0 w-full h-full [backface-visibility:hidden] [-webkit-backface-visibility:hidden] bg-gradient-to-br from-[#57441F] to-[#2D2310] rounded-[2.5rem] shadow-xl border border-[#C2A77A]/20 p-8 text-white [transform:rotateY(180deg)] flex flex-col items-center justify-center text-center">
+            <h4 class="font-headline text-[20px] text-[#C2A77A] mb-4">Em Detalhes</h4>
+            
+            <p class="text-[14px] text-white/90 font-light leading-relaxed mb-4">
+                Com a indicação clínica correta, entregamos o imenso benefício da <strong>Carga Imediata</strong>, fixando a prótese no mesmo dia da cirurgia.
+            </p>
+            <p class="text-[14px] text-white/90 font-light leading-relaxed mb-6 border-t border-white/10 pt-4">
+                No caso de unitários, entregamos o provisório impecavelmente estético para o período ósseo.
+            </p>
+            
+            <div class="mt-auto relative z-10 flex items-center justify-center gap-2 text-[#C2A77A]/50">
+                <span class="text-[10px] font-bold uppercase tracking-[0.2em]">Voltar</span>
+                <span class="material-symbols-outlined text-[14px]">arrow_circle_left</span>
+            </div>
+            
+            <div class="absolute bottom-0 left-0 right-0 h-1.5 bg-gradient-to-r from-primary/0 via-primary to-primary/0 opacity-30"></div>
+        </div>
+
     </div>
-</label>
+</div>
 
 <!-- Step 4 -->
-<label class="block relative group cursor-pointer reveal-on-scroll" style="transition-delay: 450ms;">
-    <input type="checkbox" class="peer hidden">
-    <div class="relative z-10 p-8 bg-white rounded-[2.5rem] shadow-[0_8px_30px_rgba(0,0,0,0.04)] border border-outline-variant/10 overflow-hidden transition-all duration-700 hover:shadow-[0_20px_50px_rgba(194,167,122,0.12)] hover:-translate-y-2 peer-checked:shadow-[0_30px_60px_rgba(194,167,122,0.15)] peer-checked:-translate-y-2 peer-checked:border-primary/30">
+<!-- Step 4 Flip Card -->
+<div class="group h-[380px] sm:h-[400px] [perspective:1000px] cursor-pointer reveal-on-scroll" style="transition-delay: 450ms;">
+    <div class="relative w-full h-full transition-all duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
         
-        <div class="absolute -top-8 -right-4 font-headline text-[160px] leading-none text-primary opacity-[0.03] select-none pointer-events-none transition-all duration-1000 group-hover:scale-110 peer-checked:scale-110 peer-checked:opacity-[0.06] peer-checked:text-[#57441F]">
-            04
-        </div>
-
-        <div class="flex items-center gap-4 mb-6 relative z-10">
-            <div class="w-14 h-14 shrink-0 rounded-2xl bg-gradient-to-br from-[#FAF9F6] to-white flex flex-col items-center justify-center border border-outline-variant/20 shadow-sm group-hover:from-primary/10 group-hover:border-primary/30 peer-checked:from-primary peer-checked:border-primary transition-all duration-500">
-                <span class="material-symbols-outlined text-[26px] text-primary group-hover:scale-110 peer-checked:text-white transition-all duration-500" style="font-variation-settings: 'wght' 300;">vital_signs</span>
+        <!-- Front -->
+        <div class="absolute inset-0 w-full h-full [backface-visibility:hidden] [-webkit-backface-visibility:hidden] bg-white rounded-[2.5rem] shadow-[0_8px_30px_rgba(0,0,0,0.04)] border border-outline-variant/10 p-8 flex flex-col items-center text-center overflow-hidden">
+            
+            <div class="absolute top-10 -left-6 font-headline text-[160px] leading-none text-primary opacity-[0.03] select-none pointer-events-none transition-transform duration-1000 group-hover:scale-105">
+                04
             </div>
-            <div class="flex-1">
-                <span class="text-[9px] uppercase tracking-[0.25em] text-primary/80 font-bold block mb-1">Passo 04</span>
-                <h4 class="font-headline text-[20px] text-[#3C3C3C] leading-tight group-hover:text-primary peer-checked:text-primary transition-colors duration-300">Acompanhamento<br>Premium</h4>
+            
+            <div class="w-16 h-16 shrink-0 rounded-2xl bg-gradient-to-br from-[#FAF9F6] to-white flex flex-col items-center justify-center border border-outline-variant/20 shadow-sm mb-6 mt-2 relative z-10 transition-transform duration-500 group-hover:border-primary/30">
+                <span class="material-symbols-outlined text-[32px] text-primary" style="font-variation-settings: 'wght' 300;">vital_signs</span>
             </div>
-        </div>
+            
+            <span class="text-[9px] uppercase tracking-[0.25em] text-primary/80 font-bold block mb-2 relative z-10">Passo 04</span>
+            <h4 class="font-headline text-[22px] text-[#3C3C3C] leading-tight mb-4 relative z-10">Acompanhamento<br>Premium</h4>
+            
+            <p class="text-[14px] text-on-surface-variant font-light leading-relaxed relative z-10 px-2 line-clamp-3">
+                Monitoramos meticulosamente sua cicatrização no pós-operatório.
+            </p>
 
-        <p class="text-[14px] text-on-surface-variant font-light leading-relaxed mb-6 relative z-10">
-            Monitoramos meticulosamente sua cicatrização pós-cirúrgica.
-        </p>
-
-        <div class="peer-checked:hidden transition-all duration-500 flex items-center justify-between border-t border-outline-variant/10 pt-5 mt-auto relative z-10">
-            <span class="text-[10px] font-bold uppercase tracking-[0.2em] text-[#C2A77A] group-hover:text-primary transition-colors flex items-center gap-3">
-                Detalhes <span class="w-8 h-[1px] bg-[#C2A77A]/50 group-hover:w-12 group-hover:bg-primary transition-all duration-500 ease-out"></span>
-            </span>
-            <div class="w-8 h-8 rounded-full border border-primary/20 flex items-center justify-center group-hover:bg-primary group-hover:border-primary transition-colors duration-500">
-                <span class="material-symbols-outlined text-[16px] text-primary group-hover:text-white transition-colors duration-500">add</span>
-            </div>
-        </div>
-
-        <div class="grid grid-rows-[0fr] peer-checked:grid-rows-[1fr] transition-[grid-template-rows] duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] relative z-10">
-            <div class="overflow-hidden">
-                <div class="pt-6 border-t border-primary/10 opacity-0 peer-checked:opacity-100 transition-opacity duration-700 delay-150">
-                    <p class="text-[13px] text-on-surface-variant font-light leading-relaxed mb-4">Nosso suporte inclui:</p>
-                    <ul class="space-y-3 mb-5">
-                        <li class="flex items-start gap-2"><div class="mt-0.5 min-w-[16px]"><span class="material-symbols-outlined text-primary text-[14px] font-bold">done_all</span></div><span class="text-[13px] font-light text-on-surface-variant">Monitoramento clínico</span></li>
-                        <li class="flex items-start gap-2"><div class="mt-0.5 min-w-[16px]"><span class="material-symbols-outlined text-primary text-[14px] font-bold">done_all</span></div><span class="text-[13px] font-light text-on-surface-variant">Sessões de laserterapia</span></li>
-                        <li class="flex items-start gap-2"><div class="mt-0.5 min-w-[16px]"><span class="material-symbols-outlined text-primary text-[14px] font-bold">done_all</span></div><span class="text-[13px] font-light text-on-surface-variant">Orientações contínuas</span></li>
-                    </ul>
-                    
-                    <div class="flex items-center justify-between pt-5 mt-2 border-t border-outline-variant/10">
-                        <span class="text-[10px] font-bold uppercase tracking-[0.2em] text-[#57441F] transition-colors flex items-center gap-3">
-                            Retrair <span class="w-8 h-[1px] bg-[#57441F]/30 hover:w-12 transition-all duration-500"></span>
-                        </span>
-                        <div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center hover:bg-primary/20 transition-colors">
-                            <span class="material-symbols-outlined text-[16px] text-[#57441F]">remove</span>
-                        </div>
-                    </div>
+            <div class="mt-auto relative z-10 flex items-center justify-center gap-2 text-[#C2A77A] group-hover:text-primary transition-colors">
+                <span class="text-[10px] font-bold uppercase tracking-[0.2em]">Saber mais</span>
+                <div class="w-6 h-6 rounded-full border border-primary/20 flex items-center justify-center group-hover:bg-primary transition-colors">
+                    <span class="material-symbols-outlined text-[14px] group-hover:text-white transition-colors">add</span>
                 </div>
             </div>
         </div>
-        <div class="absolute bottom-0 left-0 right-0 h-1.5 bg-gradient-to-r from-primary/0 via-primary to-primary/0 opacity-0 peer-checked:opacity-100 transition-all duration-700 transform scale-x-50 peer-checked:scale-x-100"></div>
+
+        <!-- Back -->
+        <div class="absolute inset-0 w-full h-full [backface-visibility:hidden] [-webkit-backface-visibility:hidden] bg-gradient-to-br from-[#57441F] to-[#2D2310] rounded-[2.5rem] shadow-xl border border-[#C2A77A]/20 p-8 text-white [transform:rotateY(180deg)] flex flex-col items-center justify-center text-left">
+            
+            <p class="text-[14px] text-[#C2A77A] font-light leading-relaxed mb-4 self-center font-medium">Nosso suporte inclui:</p>
+            <ul class="space-y-4 mb-5 w-full">
+                <li class="flex items-start gap-2"><div class="mt-0.5 min-w-[16px]"><span class="material-symbols-outlined text-[#C2A77A] text-[16px] font-bold">check</span></div><span class="text-[13px] font-light text-white/90">Monitoramento clínico diário</span></li>
+                <li class="flex items-start gap-2"><div class="mt-0.5 min-w-[16px]"><span class="material-symbols-outlined text-[#C2A77A] text-[16px] font-bold">check</span></div><span class="text-[13px] font-light text-white/90">Sessões otimizadas de laserterapia</span></li>
+                <li class="flex items-start gap-2"><div class="mt-0.5 min-w-[16px]"><span class="material-symbols-outlined text-[#C2A77A] text-[16px] font-bold">check</span></div><span class="text-[13px] font-light text-white/90">Orientações contínuas até alta médica</span></li>
+            </ul>
+            
+            <div class="mt-auto relative z-10 flex items-center justify-center gap-2 text-[#C2A77A]/50 w-full">
+                <span class="text-[10px] font-bold uppercase tracking-[0.2em]">Voltar</span>
+                <span class="material-symbols-outlined text-[14px]">arrow_circle_left</span>
+            </div>
+            
+            <div class="absolute bottom-0 left-0 right-0 h-1.5 bg-gradient-to-r from-primary/0 via-primary to-primary/0 opacity-30"></div>
+        </div>
+
     </div>
-</label>
+</div>
 
         </div>
     </div>
