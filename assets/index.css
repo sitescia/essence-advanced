@@ -86,62 +86,6 @@ body {
     transform: scale(0.95) translateY(20px);
 }
 
-/* --- Glassmorphism Hover Glow Effect --- */
-.glass-card::before {
-  background: radial-gradient(
-    600px circle at var(--mouse-x) var(--mouse-y), 
-    rgba(194, 167, 122, 0.15),
-    transparent 40%
-  );
-  border-radius: inherit;
-  content: "";
-  height: 100%;
-  left: 0;
-  opacity: 0;
-  position: absolute;
-  top: 0;
-  transition: opacity 500ms;
-  width: 100%;
-  z-index: 2;
-  pointer-events: none;
-}
 
-.glass-card:hover::before {
-  opacity: 1;
-}
-
-.glass-card::after {  
-  background: radial-gradient(
-    400px circle at var(--mouse-x) var(--mouse-y), 
-    rgba(194, 167, 122, 0.4),
-    transparent 40%
-  );
-  border-radius: inherit;
-  content: "";
-  height: 100%;
-  left: 0;
-  opacity: 0;
-  position: absolute;
-  top: 0;
-  transition: opacity 500ms;
-  width: 100%;
-  z-index: 1;
-}
-
-.glass-card:hover::after {
-  opacity: 1;
-}
-
-.card-content {
-  background-color: rgba(26, 26, 26, 0.6);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  border-radius: inherit;
-  height: calc(100% - 2px);
-  width: calc(100% - 2px);
-  margin: 1px;
-  position: relative;
-  z-index: 3;
-}
 
 
