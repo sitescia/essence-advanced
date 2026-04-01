@@ -731,81 +731,122 @@ A falta de confiança afeta muito mais do que seu sorriso — ela impacta as sua
         
     </div>
 </section>
-<!-- Technology Section - Clean & Clear -->
-<section class="py-32 px-6 bg-surface text-[#3C3C3C]" id="tecnologia">
-    <div class="container mx-auto max-w-7xl">
+<!-- Technology Section - Triple AAA Premium -->
+<section class="py-32 px-6 bg-surface text-[#3C3C3C] relative overflow-hidden" id="tecnologia">
+    <!-- Decorative divider top -->
+    <div class="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-outline-variant/20 to-transparent"></div>
+
+    <!-- Subtle texture overlay -->
+    <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-3 pointer-events-none"></div>
+
+    <!-- Subtle ambient glow blobs (barely perceptible) -->
+    <div class="absolute -top-40 right-0 w-[600px] h-[600px] bg-primary/3 rounded-full blur-[120px] pointer-events-none translate-x-1/3"></div>
+    <div class="absolute -bottom-32 left-0 w-[500px] h-[500px] bg-primary/2 rounded-full blur-[100px] pointer-events-none -translate-x-1/4"></div>
+
+    <div class="container mx-auto max-w-7xl relative z-10">
+        <!-- Ghost oversized decorative number -->
+        <div class="absolute top-0 right-0 font-headline text-[160px] leading-none text-primary opacity-[0.03] select-none pointer-events-none">
+            03
+        </div>
+
+        <!-- Animated badge pill -->
+        <div class="mb-8 reveal-on-scroll inline-flex items-center gap-2 border border-primary/20 px-4 py-2 rounded-full bg-primary/5">
+            <span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+            <span class="text-[9px] uppercase tracking-widest text-[#57441F] font-bold">Tecnologia de Ponta</span>
+        </div>
+
         <!-- Title Section -->
-        <div class="mb-20 reveal-on-scroll max-w-3xl">
+        <div class="mb-8 reveal-on-scroll max-w-3xl">
             <h2 class="font-headline text-5xl md:text-6xl lg:text-7xl text-[#3C3C3C] mb-6 leading-[1.1]">
                 Tecnologia que traz <br><span class="text-primary italic font-light">mais segurança</span> ao tratamento
             </h2>
+            <p class="text-on-surface-variant text-lg font-light leading-relaxed max-w-2xl">
+                Equipamentos certificados internacionalmente combinados com expertise clínica para garantir a máxima precisão e segurança em cada procedimento.
+            </p>
         </div>
 
         <!-- Content Grid -->
         <div class="grid md:grid-cols-2 gap-16 items-start">
-            <!-- Left: Check Items -->
-            <div class="space-y-6 reveal-on-scroll">
+            <!-- Left: Premium Check Items -->
+            <div class="space-y-8 reveal-on-scroll">
                 <!-- Check Item 1 -->
-                <div class="check-item flex gap-4 p-6 rounded-2xl border border-primary/10 bg-white/40 backdrop-blur-sm cursor-pointer opacity-70 transition-all hover:opacity-100 hover:bg-white/60 hover:border-primary/30">
-                    <div class="flex-shrink-0 pt-1">
-                        <span class="check-icon text-primary/70 text-xl font-bold">✔</span>
+                <div class="group/item flex gap-6 pb-8 border-b border-outline-variant/10 transition-all duration-500 reveal-on-scroll" style="transition-delay: 100ms;">
+                    <div class="w-14 h-14 shrink-0 rounded-2xl border border-primary/20 bg-[#FAF9F6] group-hover/item:bg-primary transition-colors duration-500 flex items-center justify-center">
+                        <span class="material-symbols-outlined text-primary group-hover/item:text-white transition-colors duration-500 text-2xl">spa</span>
                     </div>
                     <div class="flex-1">
-                        <h4 class="font-headline text-lg md:text-xl text-[#3C3C3C] mb-1">Mais conforto durante os exames</h4>
+                        <h4 class="font-headline text-lg text-[#3C3C3C] group-hover/item:text-primary transition-colors duration-300 mb-1">Mais conforto durante os exames</h4>
                         <p class="text-[#3C3C3C]/60 text-sm font-light">Equipamentos avançados para sua tranquilidade</p>
                     </div>
                 </div>
 
                 <!-- Check Item 2 -->
-                <div class="check-item flex gap-4 p-6 rounded-2xl border border-primary/10 bg-white/40 backdrop-blur-sm cursor-pointer opacity-70 transition-all hover:opacity-100 hover:bg-white/60 hover:border-primary/30">
-                    <div class="flex-shrink-0 pt-1">
-                        <span class="check-icon text-primary/70 text-xl font-bold">✔</span>
+                <div class="group/item flex gap-6 pb-8 border-b border-outline-variant/10 transition-all duration-500 reveal-on-scroll" style="transition-delay: 200ms;">
+                    <div class="w-14 h-14 shrink-0 rounded-2xl border border-primary/20 bg-[#FAF9F6] group-hover/item:bg-primary transition-colors duration-500 flex items-center justify-center">
+                        <span class="material-symbols-outlined text-primary group-hover/item:text-white transition-colors duration-500 text-2xl">precision_manufacturing</span>
                     </div>
                     <div class="flex-1">
-                        <h4 class="font-headline text-lg md:text-xl text-[#3C3C3C] mb-1">Maior precisão no planejamento</h4>
+                        <h4 class="font-headline text-lg text-[#3C3C3C] group-hover/item:text-primary transition-colors duration-300 mb-1">Maior precisão no planejamento</h4>
                         <p class="text-[#3C3C3C]/60 text-sm font-light">Tecnologia 3D para resultados excepcionais</p>
                     </div>
                 </div>
 
                 <!-- Check Item 3 -->
-                <div class="check-item flex gap-4 p-6 rounded-2xl border border-primary/10 bg-white/40 backdrop-blur-sm cursor-pointer opacity-70 transition-all hover:opacity-100 hover:bg-white/60 hover:border-primary/30">
-                    <div class="flex-shrink-0 pt-1">
-                        <span class="check-icon text-primary/70 text-xl font-bold">✔</span>
+                <div class="group/item flex gap-6 pb-8 border-b border-outline-variant/10 transition-all duration-500 reveal-on-scroll" style="transition-delay: 300ms;">
+                    <div class="w-14 h-14 shrink-0 rounded-2xl border border-primary/20 bg-[#FAF9F6] group-hover/item:bg-primary transition-colors duration-500 flex items-center justify-center">
+                        <span class="material-symbols-outlined text-primary group-hover/item:text-white transition-colors duration-500 text-2xl">verified_user</span>
                     </div>
                     <div class="flex-1">
-                        <h4 class="font-headline text-lg md:text-xl text-[#3C3C3C] mb-1">Procedimentos mais seguros</h4>
+                        <h4 class="font-headline text-lg text-[#3C3C3C] group-hover/item:text-primary transition-colors duration-300 mb-1">Procedimentos mais seguros</h4>
                         <p class="text-[#3C3C3C]/60 text-sm font-light">Padrões internacionais de segurança</p>
                     </div>
                 </div>
 
                 <!-- Check Item 4 -->
-                <div class="check-item flex gap-4 p-6 rounded-2xl border border-primary/10 bg-white/40 backdrop-blur-sm cursor-pointer opacity-70 transition-all hover:opacity-100 hover:bg-white/60 hover:border-primary/30">
-                    <div class="flex-shrink-0 pt-1">
-                        <span class="check-icon text-primary/70 text-xl font-bold">✔</span>
+                <div class="group/item flex gap-6 transition-all duration-500 reveal-on-scroll" style="transition-delay: 400ms;">
+                    <div class="w-14 h-14 shrink-0 rounded-2xl border border-primary/20 bg-[#FAF9F6] group-hover/item:bg-primary transition-colors duration-500 flex items-center justify-center">
+                        <span class="material-symbols-outlined text-primary group-hover/item:text-white transition-colors duration-500 text-2xl">trending_up</span>
                     </div>
                     <div class="flex-1">
-                        <h4 class="font-headline text-lg md:text-xl text-[#3C3C3C] mb-1">Resultados previsíveis</h4>
+                        <h4 class="font-headline text-lg text-[#3C3C3C] group-hover/item:text-primary transition-colors duration-300 mb-1">Resultados previsíveis</h4>
                         <p class="text-[#3C3C3C]/60 text-sm font-light">Planejamento digital que garante sucesso</p>
                     </div>
                 </div>
             </div>
 
-            <!-- Right: Images Gallery -->
-            <div class="grid grid-cols-2 gap-4 reveal-on-scroll" style="transition-delay: 200ms;">
-                <div class="rounded-2xl overflow-hidden h-56 border border-outline-variant/20 hover:border-primary/40 transition-all duration-500 group cursor-pointer shadow-sm hover:shadow-md">
-                    <img alt="Consultório Premium" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="https://images.unsplash.com/photo-1576091160550-112173f31c77?w=500&h=500&fit=crop" />
-                </div>
-                <div class="rounded-2xl overflow-hidden h-56 border border-outline-variant/20 hover:border-primary/40 transition-all duration-500 group cursor-pointer shadow-sm hover:shadow-md">
-                    <img alt="Equipamento Tecnológico" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="https://images.unsplash.com/photo-1576091160588-112173f31c77?w=500&h=500&fit=crop" />
-                </div>
-                <div class="rounded-2xl overflow-hidden h-56 border border-outline-variant/20 hover:border-primary/40 transition-all duration-500 group cursor-pointer shadow-sm hover:shadow-md">
-                    <img alt="Sala de Atendimento" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="https://images.unsplash.com/photo-1527032359993-14da0fb50c91?w=500&h=500&fit=crop" />
-                </div>
-                <div class="rounded-2xl overflow-hidden h-56 border border-outline-variant/20 hover:border-primary/40 transition-all duration-500 group cursor-pointer shadow-sm hover:shadow-md">
-                    <img alt="Tecnologia de Ponta" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="https://images.unsplash.com/photo-1579154204601-01d82979d485?w=500&h=500&fit=crop" />
+            <!-- Right: Editorial Image Gallery -->
+            <div class="reveal-on-scroll" style="transition-delay: 200ms;">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 h-[550px]">
+                    <!-- Tall main image (left, spans 2 rows) -->
+                    <div class="md:col-span-1 md:row-span-2 relative group overflow-hidden rounded-[2.5rem] border border-outline-variant/20 hover:border-primary/30 transition-all duration-700 shadow-lg hover:shadow-2xl">
+                        <img alt="Consultório Premium" class="w-full h-full object-cover scale-105 group-hover:scale-100 transition-transform duration-[1.5s]" src="https://images.unsplash.com/photo-1576091160550-112173f31c77?w=500&h=700&fit=crop" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#3C3C3C]/20 to-transparent"></div>
+
+                        <!-- Floating glassmorphism stat card -->
+                        <div class="absolute bottom-6 right-6 bg-white/85 backdrop-blur-xl px-5 py-4 rounded-2xl shadow-[0_20px_40px_rgba(0,0,0,0.08)] border border-white/40 group-hover:-translate-y-2 transition-transform duration-500">
+                            <p class="text-primary font-bold text-xs uppercase tracking-widest mb-1">Certificação</p>
+                            <p class="text-[#3C3C3C] font-headline text-sm leading-tight">Implantes Suíços ISO 5833</p>
+                        </div>
+                    </div>
+
+                    <!-- Stacked small images (right) -->
+                    <div class="md:col-span-2 flex flex-col gap-4">
+                        <!-- Top small image -->
+                        <div class="group overflow-hidden rounded-[2.5rem] border border-outline-variant/20 hover:border-primary/30 transition-all duration-700 shadow-lg hover:shadow-xl h-full">
+                            <img alt="Equipamento Tecnológico" class="w-full h-full object-cover scale-105 group-hover:scale-100 transition-transform duration-[1.5s]" src="https://images.unsplash.com/photo-1576091160588-112173f31c77?w=400&h=260&fit=crop" />
+                        </div>
+
+                        <!-- Bottom small image -->
+                        <div class="group overflow-hidden rounded-[2.5rem] border border-outline-variant/20 hover:border-primary/30 transition-all duration-700 shadow-lg hover:shadow-xl h-full">
+                            <img alt="Sala de Atendimento" class="w-full h-full object-cover scale-105 group-hover:scale-100 transition-transform duration-[1.5s]" src="https://images.unsplash.com/photo-1527032359993-14da0fb50c91?w=400&h=260&fit=crop" />
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+
+        <!-- Bottom gradient strip -->
+        <div class="absolute bottom-0 left-0 right-0 h-1.5 bg-gradient-to-r from-primary/0 via-primary to-primary/0 opacity-20"></div>
     </div>
 </section>
 <!-- Doctor Profile -->
