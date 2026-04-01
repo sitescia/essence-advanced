@@ -372,54 +372,137 @@ A falta de confiança afeta muito mais do que seu sorriso — ela impacta as sua
     </div>
 </section>
 <!-- How it Works (4 Steps) -->
-<section class="py-32 px-6 bg-white relative overflow-hidden" id="processo">
+<section class="py-32 px-6 bg-[#FAF9F6] relative overflow-hidden" id="processo">
+    <!-- Decorative subtle background -->
+    <div class="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-outline-variant/20 to-transparent"></div>
+
     <div class="container mx-auto max-w-7xl">
-        <div class="text-center mb-24 reveal-on-scroll">
+        <div class="text-center mb-20 reveal-on-scroll">
             <div class="inline-flex items-center gap-2 mb-6 border border-primary/20 px-3 py-1 rounded-full bg-primary/5">
                 <span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
                 <span class="text-[9px] uppercase tracking-widest text-[#57441F] font-bold">O Processo</span>
             </div>
             <h2 class="font-headline text-4xl md:text-5xl lg:text-[3.2rem] text-[#3C3C3C] mb-6">A sua Jornada até o Novo Sorriso</h2>
             <p class="text-on-surface-variant text-lg font-light max-w-2xl mx-auto leading-relaxed">
-                Um fluxo de trabalho minucioso e 100% previsível. Do primeiro escaneamento até a fixação dos dentes no mesmo dia.
+                Um fluxo de trabalho minucioso e 100% previsível. Transparência e segurança do primeiro escaneamento à alta clínica.
             </p>
         </div>
 
-        <div class="grid md:grid-cols-4 gap-8 lg:gap-12 relative z-10">
+        <div class="grid md:grid-cols-4 gap-6 relative z-10 items-start">
             <!-- Connecting Line for Desktop -->
-            <div class="hidden md:block absolute top-[4.5rem] left-[12%] right-[12%] h-[1px] bg-gradient-to-r from-transparent via-primary/30 to-transparent -z-10"></div>
+            <div class="hidden md:block absolute top-[2.5rem] left-[12%] right-[12%] h-[1px] bg-gradient-to-r from-transparent via-primary/30 to-transparent -z-10"></div>
             
-            <div class="relative flex flex-col items-center text-center group reveal-on-scroll">
-                <div class="w-20 h-20 rounded-full bg-white border border-outline-variant/20 flex items-center justify-center mb-8 relative z-10 group-hover:border-primary group-hover:shadow-[0_0_25px_rgba(194,167,122,0.2)] transition-all duration-500">
-                    <span class="font-headline text-3xl text-primary">01</span>
+            <!-- Step 1 -->
+            <div class="relative bg-white rounded-3xl p-8 border border-outline-variant/20 shadow-sm hover:shadow-xl hover:border-primary/30 transition-all duration-500 group reveal-on-scroll cursor-pointer h-full">
+                <!-- Icon & Header -->
+                <div class="flex flex-col items-center text-center mb-4">
+                    <div class="w-20 h-20 rounded-full bg-[#FAF9F6] border border-outline-variant/20 flex items-center justify-center mb-6 z-10 group-hover:border-primary group-hover:bg-primary/5 transition-colors duration-500">
+                        <span class="font-headline text-3xl text-primary">01</span>
+                    </div>
+                    <h4 class="font-headline text-xl text-[#3C3C3C] mb-2 group-hover:text-primary transition-colors duration-300">Avaliação Especializada</h4>
+                     <p class="text-sm text-on-surface-variant font-light leading-relaxed">
+                        Realizamos uma avaliação completa com scanner intraoral digital.
+                    </p>
                 </div>
-                <h4 class="font-headline text-xl text-[#3C3C3C] mb-3 group-hover:text-primary transition-colors duration-300">Avaliação 3D</h4>
-                <p class="text-sm text-on-surface-variant font-light leading-relaxed max-w-[250px]">Escaneamento intraoral e tomografia digitalizada para a captura das suas medidas exatas, sem moldes desconfortáveis.</p>
+                
+                <!-- Expandable Content -->
+                <div class="grid grid-rows-[0fr] group-hover:grid-rows-[1fr] transition-[grid-template-rows] duration-700 ease-in-out">
+                    <div class="overflow-hidden">
+                        <div class="pt-4 mt-2 border-t border-outline-variant/10">
+                            <p class="text-sm text-on-surface-variant font-light leading-relaxed">
+                                Esse escaneamento minucioso permite capturar imagens extremamente precisas e planejar todo o tratamento com previsibilidade e segurança absoluta.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Expansion Indicator -->
+                <div class="absolute bottom-4 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-0 transition-opacity duration-300 pointer-events-none md:group-hover:opacity-0">
+                    <span class="material-symbols-outlined text-outline-variant text-[16px] animate-bounce">keyboard_arrow_down</span>
+                </div>
+                <div class="absolute -bottom-3 left-1/2 -translate-x-1/2 w-8 h-1 rounded-full bg-outline-variant/20 group-hover:bg-primary/40 transition-colors duration-300"></div>
             </div>
             
-            <div class="relative flex flex-col items-center text-center group reveal-on-scroll" style="transition-delay: 150ms;">
-                <div class="w-20 h-20 rounded-full bg-white border border-outline-variant/20 flex items-center justify-center mb-8 relative z-10 group-hover:border-primary group-hover:shadow-[0_0_25px_rgba(194,167,122,0.2)] transition-all duration-500">
-                    <span class="font-headline text-3xl text-primary">02</span>
+            <!-- Step 2 -->
+            <div class="relative bg-white rounded-3xl p-8 border border-outline-variant/20 shadow-sm hover:shadow-xl hover:border-primary/30 transition-all duration-500 group reveal-on-scroll cursor-pointer h-full" style="transition-delay: 150ms;">
+                <div class="flex flex-col items-center text-center mb-4">
+                    <div class="w-20 h-20 rounded-full bg-[#FAF9F6] border border-outline-variant/20 flex items-center justify-center mb-6 z-10 group-hover:border-primary group-hover:bg-primary/5 transition-colors duration-500">
+                        <span class="font-headline text-3xl text-primary">02</span>
+                    </div>
+                    <h4 class="font-headline text-xl text-[#3C3C3C] mb-2 group-hover:text-primary transition-colors duration-300">Planejamento Personalizado</h4>
+                    <p class="text-sm text-on-surface-variant font-light leading-relaxed">
+                        Cada caso é estudado e desenhado individualmente.
+                    </p>
                 </div>
-                <h4 class="font-headline text-xl text-[#3C3C3C] mb-3 group-hover:text-primary transition-colors duration-300">Planejamento</h4>
-                <p class="text-sm text-on-surface-variant font-light leading-relaxed max-w-[250px]">Desenhamos o seu futuro sorriso no software CAD/CAM e criamos as guias cirúrgicas virtuais de alta precisão.</p>
+                
+                <div class="grid grid-rows-[0fr] group-hover:grid-rows-[1fr] transition-[grid-template-rows] duration-700 ease-in-out">
+                    <div class="overflow-hidden text-left">
+                        <div class="pt-4 mt-2 border-t border-outline-variant/10 text-sm text-on-surface-variant font-light leading-relaxed">
+                            <p class="mb-3">Definimos com exatidão:</p>
+                            <ul class="space-y-2 mb-3">
+                                <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[14px]">check</span> Tipo de implante ideal</li>
+                                <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[14px]">check</span> Necessidade de enxertos</li>
+                                <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[14px]">check</span> Possibilidade de carga imediata</li>
+                                <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[14px]">check</span> Estratégia cirúrgica perfeita</li>
+                            </ul>
+                            <p>Esse planejamento eleva a segurança e a previsibilidade.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="absolute -bottom-3 left-1/2 -translate-x-1/2 w-8 h-1 rounded-full bg-outline-variant/20 group-hover:bg-primary/40 transition-colors duration-300"></div>
             </div>
             
-            <div class="relative flex flex-col items-center text-center group reveal-on-scroll" style="transition-delay: 300ms;">
-                <div class="w-20 h-20 rounded-full bg-white border border-outline-variant/20 flex items-center justify-center mb-8 relative z-10 group-hover:border-primary group-hover:shadow-[0_0_25px_rgba(194,167,122,0.2)] transition-all duration-500">
-                    <span class="font-headline text-3xl text-primary">03</span>
+            <!-- Step 3 -->
+            <div class="relative bg-white rounded-3xl p-8 border border-outline-variant/20 shadow-sm hover:shadow-xl hover:border-primary/30 transition-all duration-500 group reveal-on-scroll cursor-pointer h-full" style="transition-delay: 300ms;">
+                <div class="flex flex-col items-center text-center mb-4">
+                    <div class="w-20 h-20 rounded-full bg-[#FAF9F6] border border-outline-variant/20 flex items-center justify-center mb-6 z-10 group-hover:border-primary group-hover:bg-primary/5 transition-colors duration-500">
+                        <span class="font-headline text-3xl text-primary">03</span>
+                    </div>
+                    <h4 class="font-headline text-xl text-[#3C3C3C] mb-2 group-hover:text-primary transition-colors duration-300">Procedimento Cirúrgico</h4>
+                    <p class="text-sm text-on-surface-variant font-light leading-relaxed">
+                        Técnicas modernas e equipamentos de ponta para sua cirurgia.
+                    </p>
                 </div>
-                <h4 class="font-headline text-xl text-[#3C3C3C] mb-3 group-hover:text-primary transition-colors duration-300">Procedimento</h4>
-                <p class="text-sm text-on-surface-variant font-light leading-relaxed max-w-[250px]">Através da cirurgia guiada sem cortes severos, inserimos os implantes e adaptamos as coroas no mesmo dia.</p>
+                
+                <div class="grid grid-rows-[0fr] group-hover:grid-rows-[1fr] transition-[grid-template-rows] duration-700 ease-in-out">
+                    <div class="overflow-hidden text-left">
+                        <div class="pt-4 mt-2 border-t border-outline-variant/10 text-sm text-on-surface-variant font-light leading-relaxed">
+                            <p class="mb-2">Nos casos indicados para carga imediata, o paciente já sai com a prótese definitiva instalada no mesmo dia.</p>
+                            <p>Nos casos unitários, quando necessário, são utilizados dentes provisórios estéticos durante o período de osseointegração.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="absolute -bottom-3 left-1/2 -translate-x-1/2 w-8 h-1 rounded-full bg-outline-variant/20 group-hover:bg-primary/40 transition-colors duration-300"></div>
             </div>
             
-            <div class="relative flex flex-col items-center text-center group reveal-on-scroll" style="transition-delay: 450ms;">
-                <div class="w-20 h-20 rounded-full bg-white border border-outline-variant/20 flex items-center justify-center mb-8 relative z-10 group-hover:border-primary group-hover:shadow-[0_0_25px_rgba(194,167,122,0.2)] transition-all duration-500">
-                    <span class="font-headline text-3xl text-primary">04</span>
+            <!-- Step 4 -->
+            <div class="relative bg-white rounded-3xl p-8 border border-outline-variant/20 shadow-sm hover:shadow-xl hover:border-primary/30 transition-all duration-500 group reveal-on-scroll cursor-pointer h-full" style="transition-delay: 450ms;">
+                <div class="flex flex-col items-center text-center mb-4">
+                    <div class="w-20 h-20 rounded-full bg-[#FAF9F6] border border-outline-variant/20 flex items-center justify-center mb-6 z-10 group-hover:border-primary group-hover:bg-primary/5 transition-colors duration-500">
+                        <span class="font-headline text-3xl text-primary">04</span>
+                    </div>
+                    <h4 class="font-headline text-xl text-[#3C3C3C] mb-2 group-hover:text-primary transition-colors duration-300">Acompanhamento</h4>
+                    <p class="text-sm text-on-surface-variant font-light leading-relaxed">
+                        Monitoramos meticulosamente sua cicatrização no pós-operatório.
+                    </p>
                 </div>
-                <h4 class="font-headline text-xl text-[#3C3C3C] mb-3 group-hover:text-primary transition-colors duration-300">Pós-operatório</h4>
-                <p class="text-sm text-on-surface-variant font-light leading-relaxed max-w-[250px]">Devido à técnica cirúrgica minimamente invasiva, sua recuperação é incrivelmente rápida e de baixo desconforto.</p>
+                
+                <div class="grid grid-rows-[0fr] group-hover:grid-rows-[1fr] transition-[grid-template-rows] duration-700 ease-in-out">
+                    <div class="overflow-hidden text-left">
+                        <div class="pt-4 mt-2 border-t border-outline-variant/10 text-sm text-on-surface-variant font-light leading-relaxed">
+                            <p class="mb-3">Nosso suporte de excelência inclui:</p>
+                            <ul class="space-y-2 mb-3">
+                                <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[14px]">check</span> Monitoramento clínico ativo</li>
+                                <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[14px]">check</span> Sessões de laserterapia</li>
+                                <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[14px]">check</span> Orientações personalizadas</li>
+                            </ul>
+                            <p>Finalizado apenas quando você recebe sua alta clínica completa.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="absolute -bottom-3 left-1/2 -translate-x-1/2 w-8 h-1 rounded-full bg-outline-variant/20 group-hover:bg-primary/40 transition-colors duration-300"></div>
             </div>
+
         </div>
     </div>
 </section>
