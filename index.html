@@ -393,13 +393,14 @@ A falta de confiança afeta muito mais do que seu sorriso — ela impacta as sua
             
             <!-- Step 1 -->
 <!-- Step 1 Flip Card -->
-<div class="group h-[380px] sm:h-[400px] [perspective:1000px] cursor-pointer reveal-on-scroll">
-    <div class="relative w-full h-full transition-all duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+<div class="group h-[380px] sm:h-[400px] [perspective:1000px] reveal-on-scroll">
+    <input type="checkbox" id="flip-1" class="peer hidden">
+    <div class="relative w-full h-full transition-all duration-700 [transform-style:preserve-3d] peer-checked:[transform:rotateY(180deg)]">
         
         <!-- Front -->
         <div class="absolute inset-0 w-full h-full [backface-visibility:hidden] [-webkit-backface-visibility:hidden] bg-white rounded-[2.5rem] shadow-[0_8px_30px_rgba(0,0,0,0.04)] border border-outline-variant/10 p-8 flex flex-col items-center text-center overflow-hidden">
             
-            <div class="absolute top-10 -left-6 font-headline text-[160px] leading-none text-primary opacity-[0.03] select-none pointer-events-none transition-transform duration-1000 group-hover:scale-105">
+            <div class="absolute -top-10 -left-4 font-headline text-[160px] leading-none text-primary opacity-[0.03] select-none pointer-events-none transition-transform duration-1000 group-hover:scale-105">
                 01
             </div>
             
@@ -414,12 +415,12 @@ A falta de confiança afeta muito mais do que seu sorriso — ela impacta as sua
                 Realizamos uma avaliação completa com scanner intraoral digital.
             </p>
 
-            <div class="mt-auto relative z-10 flex items-center justify-center gap-2 text-[#C2A77A] group-hover:text-primary transition-colors">
-                <span class="text-[10px] font-bold uppercase tracking-[0.2em]">Saber mais</span>
-                <div class="w-6 h-6 rounded-full border border-primary/20 flex items-center justify-center group-hover:bg-primary transition-colors">
-                    <span class="material-symbols-outlined text-[14px] group-hover:text-white transition-colors">add</span>
+            <label for="flip-1" class="mt-auto relative z-10 flex items-center justify-center gap-2 text-[#C2A77A] hover:text-primary transition-colors cursor-pointer group/btn">
+                <span class="text-[10px] font-bold uppercase tracking-[0.2em] pointer-events-none">Saber mais</span>
+                <div class="w-6 h-6 rounded-full border border-primary/20 flex items-center justify-center group-hover/btn:bg-primary transition-colors pointer-events-none">
+                    <span class="material-symbols-outlined text-[14px] group-hover/btn:text-white transition-colors">add</span>
                 </div>
-            </div>
+            </label>
         </div>
 
         <!-- Back -->
@@ -430,10 +431,10 @@ A falta de confiança afeta muito mais do que seu sorriso — ela impacta as sua
                 Esse escaneamento minucioso permite capturar imagens precisas e planejar todo o tratamento com segurança absoluta, sem as antigas "massinhas" desconfortáveis.
             </p>
             
-            <div class="mt-auto relative z-10 flex items-center justify-center gap-2 text-[#C2A77A]/50">
-                <span class="text-[10px] font-bold uppercase tracking-[0.2em]">Voltar</span>
-                <span class="material-symbols-outlined text-[14px]">arrow_circle_left</span>
-            </div>
+            <label for="flip-1" class="mt-auto relative z-10 flex items-center justify-center gap-2 text-[#C2A77A]/50 hover:text-[#C2A77A] cursor-pointer transition-colors group/btn z-20">
+                <span class="text-[10px] font-bold uppercase tracking-[0.2em] pointer-events-none">Voltar</span>
+                <span class="material-symbols-outlined text-[14px] pointer-events-none">arrow_circle_left</span>
+            </label>
             
             <div class="absolute bottom-0 left-0 right-0 h-1.5 bg-gradient-to-r from-primary/0 via-primary to-primary/0 opacity-30"></div>
         </div>
@@ -443,13 +444,14 @@ A falta de confiança afeta muito mais do que seu sorriso — ela impacta as sua
 
 <!-- Step 2 -->
 <!-- Step 2 Flip Card -->
-<div class="group h-[380px] sm:h-[400px] [perspective:1000px] cursor-pointer reveal-on-scroll" style="transition-delay: 150ms;">
-    <div class="relative w-full h-full transition-all duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+<div class="group h-[380px] sm:h-[400px] [perspective:1000px] reveal-on-scroll" style="transition-delay: 150ms;">
+    <input type="checkbox" id="flip-2" class="peer hidden">
+    <div class="relative w-full h-full transition-all duration-700 [transform-style:preserve-3d] peer-checked:[transform:rotateY(180deg)]">
         
         <!-- Front -->
         <div class="absolute inset-0 w-full h-full [backface-visibility:hidden] [-webkit-backface-visibility:hidden] bg-white rounded-[2.5rem] shadow-[0_8px_30px_rgba(0,0,0,0.04)] border border-outline-variant/10 p-8 flex flex-col items-center text-center overflow-hidden">
             
-            <div class="absolute top-10 -left-6 font-headline text-[160px] leading-none text-primary opacity-[0.03] select-none pointer-events-none transition-transform duration-1000 group-hover:scale-105">
+            <div class="absolute -top-10 -left-4 font-headline text-[160px] leading-none text-primary opacity-[0.03] select-none pointer-events-none transition-transform duration-1000 group-hover:scale-105">
                 02
             </div>
             
@@ -464,12 +466,12 @@ A falta de confiança afeta muito mais do que seu sorriso — ela impacta as sua
                 Cada caso é estudado e desenhado individualmente pelos especialistas.
             </p>
 
-            <div class="mt-auto relative z-10 flex items-center justify-center gap-2 text-[#C2A77A] group-hover:text-primary transition-colors">
-                <span class="text-[10px] font-bold uppercase tracking-[0.2em]">Saber mais</span>
-                <div class="w-6 h-6 rounded-full border border-primary/20 flex items-center justify-center group-hover:bg-primary transition-colors">
-                    <span class="material-symbols-outlined text-[14px] group-hover:text-white transition-colors">add</span>
+            <label for="flip-2" class="mt-auto relative z-10 flex items-center justify-center gap-2 text-[#C2A77A] hover:text-primary transition-colors cursor-pointer group/btn">
+                <span class="text-[10px] font-bold uppercase tracking-[0.2em] pointer-events-none">Saber mais</span>
+                <div class="w-6 h-6 rounded-full border border-primary/20 flex items-center justify-center group-hover/btn:bg-primary transition-colors pointer-events-none">
+                    <span class="material-symbols-outlined text-[14px] group-hover/btn:text-white transition-colors">add</span>
                 </div>
-            </div>
+            </label>
         </div>
 
         <!-- Back -->
@@ -483,10 +485,10 @@ A falta de confiança afeta muito mais do que seu sorriso — ela impacta as sua
                 <li class="flex items-start gap-2"><div class="mt-0.5 min-w-[16px]"><span class="material-symbols-outlined text-[#C2A77A] text-[16px] font-bold">check</span></div><span class="text-[13px] font-light text-white/90">Estratégia cirúrgica</span></li>
             </ul>
             
-            <div class="mt-auto relative z-10 flex items-center justify-center gap-2 text-[#C2A77A]/50 w-full">
-                <span class="text-[10px] font-bold uppercase tracking-[0.2em]">Voltar</span>
-                <span class="material-symbols-outlined text-[14px]">arrow_circle_left</span>
-            </div>
+            <label for="flip-3" class="mt-auto relative z-10 flex items-center justify-center gap-2 text-[#C2A77A]/50 hover:text-[#C2A77A] cursor-pointer transition-colors group/btn z-20">
+                <span class="text-[10px] font-bold uppercase tracking-[0.2em] pointer-events-none">Voltar</span>
+                <span class="material-symbols-outlined text-[14px] pointer-events-none">arrow_circle_left</span>
+            </label>
             
             <div class="absolute bottom-0 left-0 right-0 h-1.5 bg-gradient-to-r from-primary/0 via-primary to-primary/0 opacity-30"></div>
         </div>
@@ -496,13 +498,14 @@ A falta de confiança afeta muito mais do que seu sorriso — ela impacta as sua
 
 <!-- Step 3 -->
 <!-- Step 3 Flip Card -->
-<div class="group h-[380px] sm:h-[400px] [perspective:1000px] cursor-pointer reveal-on-scroll" style="transition-delay: 300ms;">
-    <div class="relative w-full h-full transition-all duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+<div class="group h-[380px] sm:h-[400px] [perspective:1000px] reveal-on-scroll" style="transition-delay: 300ms;">
+    <input type="checkbox" id="flip-3" class="peer hidden">
+    <div class="relative w-full h-full transition-all duration-700 [transform-style:preserve-3d] peer-checked:[transform:rotateY(180deg)]">
         
         <!-- Front -->
         <div class="absolute inset-0 w-full h-full [backface-visibility:hidden] [-webkit-backface-visibility:hidden] bg-white rounded-[2.5rem] shadow-[0_8px_30px_rgba(0,0,0,0.04)] border border-outline-variant/10 p-8 flex flex-col items-center text-center overflow-hidden">
             
-            <div class="absolute top-10 -left-6 font-headline text-[160px] leading-none text-primary opacity-[0.03] select-none pointer-events-none transition-transform duration-1000 group-hover:scale-105">
+            <div class="absolute -top-10 -left-4 font-headline text-[160px] leading-none text-primary opacity-[0.03] select-none pointer-events-none transition-transform duration-1000 group-hover:scale-105">
                 03
             </div>
             
@@ -517,12 +520,12 @@ A falta de confiança afeta muito mais do que seu sorriso — ela impacta as sua
                 Técnicas modernas e equipamentos de ponta para sua intervenção.
             </p>
 
-            <div class="mt-auto relative z-10 flex items-center justify-center gap-2 text-[#C2A77A] group-hover:text-primary transition-colors">
-                <span class="text-[10px] font-bold uppercase tracking-[0.2em]">Saber mais</span>
-                <div class="w-6 h-6 rounded-full border border-primary/20 flex items-center justify-center group-hover:bg-primary transition-colors">
-                    <span class="material-symbols-outlined text-[14px] group-hover:text-white transition-colors">add</span>
+            <label for="flip-3" class="mt-auto relative z-10 flex items-center justify-center gap-2 text-[#C2A77A] hover:text-primary transition-colors cursor-pointer group/btn">
+                <span class="text-[10px] font-bold uppercase tracking-[0.2em] pointer-events-none">Saber mais</span>
+                <div class="w-6 h-6 rounded-full border border-primary/20 flex items-center justify-center group-hover/btn:bg-primary transition-colors pointer-events-none">
+                    <span class="material-symbols-outlined text-[14px] group-hover/btn:text-white transition-colors">add</span>
                 </div>
-            </div>
+            </label>
         </div>
 
         <!-- Back -->
@@ -536,10 +539,10 @@ A falta de confiança afeta muito mais do que seu sorriso — ela impacta as sua
                 No caso de unitários, entregamos o provisório impecavelmente estético para o período ósseo.
             </p>
             
-            <div class="mt-auto relative z-10 flex items-center justify-center gap-2 text-[#C2A77A]/50">
-                <span class="text-[10px] font-bold uppercase tracking-[0.2em]">Voltar</span>
-                <span class="material-symbols-outlined text-[14px]">arrow_circle_left</span>
-            </div>
+            <label for="flip-2" class="mt-auto relative z-10 flex items-center justify-center gap-2 text-[#C2A77A]/50 hover:text-[#C2A77A] cursor-pointer transition-colors group/btn z-20">
+                <span class="text-[10px] font-bold uppercase tracking-[0.2em] pointer-events-none">Voltar</span>
+                <span class="material-symbols-outlined text-[14px] pointer-events-none">arrow_circle_left</span>
+            </label>
             
             <div class="absolute bottom-0 left-0 right-0 h-1.5 bg-gradient-to-r from-primary/0 via-primary to-primary/0 opacity-30"></div>
         </div>
@@ -549,13 +552,14 @@ A falta de confiança afeta muito mais do que seu sorriso — ela impacta as sua
 
 <!-- Step 4 -->
 <!-- Step 4 Flip Card -->
-<div class="group h-[380px] sm:h-[400px] [perspective:1000px] cursor-pointer reveal-on-scroll" style="transition-delay: 450ms;">
-    <div class="relative w-full h-full transition-all duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+<div class="group h-[380px] sm:h-[400px] [perspective:1000px] reveal-on-scroll" style="transition-delay: 450ms;">
+    <input type="checkbox" id="flip-4" class="peer hidden">
+    <div class="relative w-full h-full transition-all duration-700 [transform-style:preserve-3d] peer-checked:[transform:rotateY(180deg)]">
         
         <!-- Front -->
         <div class="absolute inset-0 w-full h-full [backface-visibility:hidden] [-webkit-backface-visibility:hidden] bg-white rounded-[2.5rem] shadow-[0_8px_30px_rgba(0,0,0,0.04)] border border-outline-variant/10 p-8 flex flex-col items-center text-center overflow-hidden">
             
-            <div class="absolute top-10 -left-6 font-headline text-[160px] leading-none text-primary opacity-[0.03] select-none pointer-events-none transition-transform duration-1000 group-hover:scale-105">
+            <div class="absolute -top-10 -left-4 font-headline text-[160px] leading-none text-primary opacity-[0.03] select-none pointer-events-none transition-transform duration-1000 group-hover:scale-105">
                 04
             </div>
             
@@ -570,12 +574,12 @@ A falta de confiança afeta muito mais do que seu sorriso — ela impacta as sua
                 Monitoramos meticulosamente sua cicatrização no pós-operatório.
             </p>
 
-            <div class="mt-auto relative z-10 flex items-center justify-center gap-2 text-[#C2A77A] group-hover:text-primary transition-colors">
-                <span class="text-[10px] font-bold uppercase tracking-[0.2em]">Saber mais</span>
-                <div class="w-6 h-6 rounded-full border border-primary/20 flex items-center justify-center group-hover:bg-primary transition-colors">
-                    <span class="material-symbols-outlined text-[14px] group-hover:text-white transition-colors">add</span>
+            <label for="flip-4" class="mt-auto relative z-10 flex items-center justify-center gap-2 text-[#C2A77A] hover:text-primary transition-colors cursor-pointer group/btn">
+                <span class="text-[10px] font-bold uppercase tracking-[0.2em] pointer-events-none">Saber mais</span>
+                <div class="w-6 h-6 rounded-full border border-primary/20 flex items-center justify-center group-hover/btn:bg-primary transition-colors pointer-events-none">
+                    <span class="material-symbols-outlined text-[14px] group-hover/btn:text-white transition-colors">add</span>
                 </div>
-            </div>
+            </label>
         </div>
 
         <!-- Back -->
@@ -588,10 +592,10 @@ A falta de confiança afeta muito mais do que seu sorriso — ela impacta as sua
                 <li class="flex items-start gap-2"><div class="mt-0.5 min-w-[16px]"><span class="material-symbols-outlined text-[#C2A77A] text-[16px] font-bold">check</span></div><span class="text-[13px] font-light text-white/90">Orientações contínuas até alta médica</span></li>
             </ul>
             
-            <div class="mt-auto relative z-10 flex items-center justify-center gap-2 text-[#C2A77A]/50 w-full">
-                <span class="text-[10px] font-bold uppercase tracking-[0.2em]">Voltar</span>
-                <span class="material-symbols-outlined text-[14px]">arrow_circle_left</span>
-            </div>
+            <label for="flip-4" class="mt-auto relative z-10 flex items-center justify-center gap-2 text-[#C2A77A]/50 hover:text-[#C2A77A] cursor-pointer transition-colors group/btn z-20">
+                <span class="text-[10px] font-bold uppercase tracking-[0.2em] pointer-events-none">Voltar</span>
+                <span class="material-symbols-outlined text-[14px] pointer-events-none">arrow_circle_left</span>
+            </label>
             
             <div class="absolute bottom-0 left-0 right-0 h-1.5 bg-gradient-to-r from-primary/0 via-primary to-primary/0 opacity-30"></div>
         </div>
