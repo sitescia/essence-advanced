@@ -958,31 +958,159 @@ A falta de confiança afeta muito mais do que seu sorriso — ela impacta as sua
         </div>
     </div>
 </section>
-<!-- Differentials Section -->
-<section class="py-24 px-6" id="diferenciais">
-<div class="container mx-auto">
-<div class="text-center mb-16">
-<h2 class="font-headline text-4xl md:text-5xl text-[#3C3C3C] mb-4">Por que escolher a Essence?</h2>
-<p class="text-on-surface-variant">Elevando o padrão da odontologia no Brasil.</p>
-</div>
-<div class="grid md:grid-cols-3 gap-8">
-<div class="group p-10 bg-surface border border-outline-variant/10 rounded-4xl transition-all hover:bg-primary hover:text-white">
-<span class="material-symbols-outlined text-4xl mb-6 group-hover:text-white text-primary">spa</span>
-<h3 class="font-headline text-2xl mb-4">Spa Comfort</h3>
-<p class="text-sm opacity-80">Ambiente projetado para anular a ansiedade, com musicoterapia e aromaterapia personalizada.</p>
-</div>
-<div class="group p-10 bg-surface border border-outline-variant/10 rounded-4xl transition-all hover:bg-primary hover:text-white">
-<span class="material-symbols-outlined text-4xl mb-6 group-hover:text-white text-primary">diamond</span>
-<h3 class="font-headline text-2xl mb-4">Materiais Premium</h3>
-<p class="text-sm opacity-80">Utilizamos exclusivamente porcelanas e componentes de titânio de grau médico suíço e alemão.</p>
-</div>
-<div class="group p-10 bg-surface border border-outline-variant/10 rounded-4xl transition-all hover:bg-primary hover:text-white">
-<span class="material-symbols-outlined text-4xl mb-6 group-hover:text-white text-primary">location_on</span>
-<h3 class="font-headline text-2xl mb-4">Foco Localizado</h3>
-<p class="text-sm opacity-80">Atendimento personalizado com exclusividade de agenda, garantindo foco total no seu caso.</p>
-</div>
-</div>
-</div>
+<!-- Differentials Section - Premium Carousel -->
+<section class="py-32 px-6 bg-gradient-to-b from-white via-white to-surface-container-low" id="diferenciais">
+    <div class="container mx-auto max-w-7xl">
+        <!-- Header -->
+        <div class="mb-20 text-center reveal-on-scroll">
+            <div class="inline-flex items-center gap-2 border border-primary/20 px-4 py-2 rounded-full bg-primary/5 mb-6">
+                <span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+                <span class="text-[9px] uppercase tracking-widest text-[#57441F] font-bold">Diferenciais</span>
+            </div>
+            <h2 class="font-headline text-5xl md:text-6xl text-[#3C3C3C] mb-4 leading-[1.1]">
+                Por que escolher a <br><span class="text-primary italic font-light">Essence?</span>
+            </h2>
+            <p class="text-on-surface-variant text-lg font-light max-w-2xl mx-auto">
+                Elevando o padrão da odontologia no Brasil com excelência em cada detalhe
+            </p>
+        </div>
+
+        <!-- Premium Infinite Carousel -->
+        <div class="relative overflow-hidden">
+            <!-- Carousel Container with pause on hover -->
+            <div class="carousel-wrapper hover:pause-animation" style="--duration: 40s;">
+                <style>
+                    @keyframes carousel-scroll {
+                        0% { transform: translateX(0); }
+                        100% { transform: translateX(-50%); }
+                    }
+
+                    .carousel-wrapper {
+                        --duration: 40s;
+                    }
+
+                    .carousel-content {
+                        display: flex;
+                        gap: 24px;
+                        animation: carousel-scroll var(--duration) linear infinite;
+                        width: fit-content;
+                    }
+
+                    .carousel-wrapper:hover .carousel-content {
+                        animation-play-state: paused;
+                    }
+
+                    .carousel-item {
+                        flex-shrink: 0;
+                        width: 320px;
+                    }
+                </style>
+
+                <div class="carousel-content">
+                    <!-- Item 1 - Especialização -->
+                    <div class="carousel-item group">
+                        <div class="h-full p-8 bg-white border border-outline-variant/20 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:border-primary/30 hover:bg-gradient-to-br hover:from-white hover:to-primary/5 cursor-default">
+                            <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary/20 to-primary/10 flex items-center justify-center mb-6 group-hover:from-primary/30 group-hover:to-primary/20 transition-all duration-500">
+                                <span class="material-symbols-outlined text-primary text-3xl">smile</span>
+                            </div>
+                            <h3 class="font-headline text-lg text-[#3C3C3C] mb-3">Especialização em reabilitação oral</h3>
+                            <p class="text-sm text-[#3C3C3C]/70 font-light leading-relaxed">Expertise em reabilitações complexas e restaurações completas</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 2 - Experiência -->
+                    <div class="carousel-item group">
+                        <div class="h-full p-8 bg-white border border-outline-variant/20 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:border-primary/30 hover:bg-gradient-to-br hover:from-white hover:to-primary/5 cursor-default">
+                            <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary/20 to-primary/10 flex items-center justify-center mb-6 group-hover:from-primary/30 group-hover:to-primary/20 transition-all duration-500">
+                                <span class="material-symbols-outlined text-primary text-3xl">verified</span>
+                            </div>
+                            <h3 class="font-headline text-lg text-[#3C3C3C] mb-3">Experiência consolidada</h3>
+                            <p class="text-sm text-[#3C3C3C]/70 font-light leading-relaxed">Décadas de prática clínica comprovada e reconhecida</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 3 - Planejamento -->
+                    <div class="carousel-item group">
+                        <div class="h-full p-8 bg-white border border-outline-variant/20 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:border-primary/30 hover:bg-gradient-to-br hover:from-white hover:to-primary/5 cursor-default">
+                            <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary/20 to-primary/10 flex items-center justify-center mb-6 group-hover:from-primary/30 group-hover:to-primary/20 transition-all duration-500">
+                                <span class="material-symbols-outlined text-primary text-3xl">assignment</span>
+                            </div>
+                            <h3 class="font-headline text-lg text-[#3C3C3C] mb-3">Planejamento individualizado</h3>
+                            <p class="text-sm text-[#3C3C3C]/70 font-light leading-relaxed">Cada sorriso recebe um tratamento único e personalizado</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 4 - Tecnologia -->
+                    <div class="carousel-item group">
+                        <div class="h-full p-8 bg-white border border-outline-variant/20 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:border-primary/30 hover:bg-gradient-to-br hover:from-white hover:to-primary/5 cursor-default">
+                            <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary/20 to-primary/10 flex items-center justify-center mb-6 group-hover:from-primary/30 group-hover:to-primary/20 transition-all duration-500">
+                                <span class="material-symbols-outlined text-primary text-3xl">science</span>
+                            </div>
+                            <h3 class="font-headline text-lg text-[#3C3C3C] mb-3">Tecnologia moderna</h3>
+                            <p class="text-sm text-[#3C3C3C]/70 font-light leading-relaxed">Equipamentos digitais de última geração para precisão</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 5 - Atendimento -->
+                    <div class="carousel-item group">
+                        <div class="h-full p-8 bg-white border border-outline-variant/20 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:border-primary/30 hover:bg-gradient-to-br hover:from-white hover:to-primary/5 cursor-default">
+                            <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary/20 to-primary/10 flex items-center justify-center mb-6 group-hover:from-primary/30 group-hover:to-primary/20 transition-all duration-500">
+                                <span class="material-symbols-outlined text-primary text-3xl">favorite</span>
+                            </div>
+                            <h3 class="font-headline text-lg text-[#3C3C3C] mb-3">Atendimento humanizado</h3>
+                            <p class="text-sm text-[#3C3C3C]/70 font-light leading-relaxed">Cuidado personalizado e empático em cada momento</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 6 - Localização -->
+                    <div class="carousel-item group">
+                        <div class="h-full p-8 bg-white border border-outline-variant/20 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:border-primary/30 hover:bg-gradient-to-br hover:from-white hover:to-primary/5 cursor-default">
+                            <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary/20 to-primary/10 flex items-center justify-center mb-6 group-hover:from-primary/30 group-hover:to-primary/20 transition-all duration-500">
+                                <span class="material-symbols-outlined text-primary text-3xl">location_on</span>
+                            </div>
+                            <h3 class="font-headline text-lg text-[#3C3C3C] mb-3">Localização estratégica na Vila Olímpia</h3>
+                            <p class="text-sm text-[#3C3C3C]/70 font-light leading-relaxed">Acesso fácil no melhor bairro de São Paulo</p>
+                        </div>
+                    </div>
+
+                    <!-- Duplicate for seamless loop -->
+                    <div class="carousel-item group">
+                        <div class="h-full p-8 bg-white border border-outline-variant/20 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:border-primary/30 hover:bg-gradient-to-br hover:from-white hover:to-primary/5 cursor-default">
+                            <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary/20 to-primary/10 flex items-center justify-center mb-6 group-hover:from-primary/30 group-hover:to-primary/20 transition-all duration-500">
+                                <span class="material-symbols-outlined text-primary text-3xl">smile</span>
+                            </div>
+                            <h3 class="font-headline text-lg text-[#3C3C3C] mb-3">Especialização em reabilitação oral</h3>
+                            <p class="text-sm text-[#3C3C3C]/70 font-light leading-relaxed">Expertise em reabilitações complexas e restaurações completas</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item group">
+                        <div class="h-full p-8 bg-white border border-outline-variant/20 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:border-primary/30 hover:bg-gradient-to-br hover:from-white hover:to-primary/5 cursor-default">
+                            <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary/20 to-primary/10 flex items-center justify-center mb-6 group-hover:from-primary/30 group-hover:to-primary/20 transition-all duration-500">
+                                <span class="material-symbols-outlined text-primary text-3xl">verified</span>
+                            </div>
+                            <h3 class="font-headline text-lg text-[#3C3C3C] mb-3">Experiência consolidada</h3>
+                            <p class="text-sm text-[#3C3C3C]/70 font-light leading-relaxed">Décadas de prática clínica comprovada e reconhecida</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item group">
+                        <div class="h-full p-8 bg-white border border-outline-variant/20 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:border-primary/30 hover:bg-gradient-to-br hover:from-white hover:to-primary/5 cursor-default">
+                            <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary/20 to-primary/10 flex items-center justify-center mb-6 group-hover:from-primary/30 group-hover:to-primary/20 transition-all duration-500">
+                                <span class="material-symbols-outlined text-primary text-3xl">assignment</span>
+                            </div>
+                            <h3 class="font-headline text-lg text-[#3C3C3C] mb-3">Planejamento individualizado</h3>
+                            <p class="text-sm text-[#3C3C3C]/70 font-light leading-relaxed">Cada sorriso recebe um tratamento único e personalizado</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gradient Overlays for Premium Effect -->
+            <div class="absolute left-0 top-0 bottom-0 w-20 bg-gradient-to-r from-white via-white to-transparent pointer-events-none z-10"></div>
+            <div class="absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-surface-container-low via-surface-container-low/50 to-transparent pointer-events-none z-10"></div>
+        </div>
+    </div>
 </section>
 <!-- Final CTA -->
 <section class="py-24 px-6 mb-20" id="contato">
