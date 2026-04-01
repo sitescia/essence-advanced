@@ -1,0 +1,91 @@
+/* index.css */
+
+/* --- Lenis Smooth Scroll Recommended Styles --- */
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
+
+/* --- Base Body Settings --- */
+body {
+    overflow-x: hidden;
+}
+
+/* --- Utilities --- */
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+.no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+/* --- Navigation Links --- */
+.nav-link {
+    position: relative;
+    padding-bottom: 2px;
+    transition: color 0.3s ease;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1.5px;
+    bottom: -2px;
+    left: 0;
+    background-color: var(--primary, #715b35);
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.nav-link:hover {
+    color: var(--primary, #715b35);
+}
+
+/* --- Marquee Animation --- */
+@keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+    animation: marquee 40s linear infinite;
+    display: flex;
+    width: max-content;
+}
+
+.marquee-divider:hover .animate-marquee {
+    animation-play-state: paused;
+}
+
+/* --- Animation Helpers --- */
+.reveal-text {
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.reveal-image {
+    opacity: 0;
+    transform: scale(0.95) translateY(20px);
+}
+
+
