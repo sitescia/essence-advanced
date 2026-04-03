@@ -78,5 +78,22 @@ document.addEventListener('DOMContentLoaded', () => {
             header.classList.remove('py-2', 'bg-white/95', 'shadow-md');
         }
     });
+
+    // Controle de estado ativo da BottomNavBar
+const navButtons = document.querySelectorAll('.nav-btn');
+
+navButtons.forEach(btn => {
+    btn.addEventListener('click', function() {
+        // Remove o dourado e o negrito de todos
+        navButtons.forEach(b => {
+            b.classList.remove('text-[#C2A77A]', 'font-bold');
+            b.classList.add('text-[#3C3C3C]/60');
+        });
+        
+        // Adiciona o dourado apenas no que foi clicado
+        this.classList.remove('text-[#3C3C3C]/60');
+        this.classList.add('text-[#C2A77A]', 'font-bold');
+    });
+});
 });
 
