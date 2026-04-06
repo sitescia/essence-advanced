@@ -49,7 +49,7 @@ body {
     height: 1.5px;
     bottom: -2px;
     left: 0;
-    background-color: var(--primary, #715b35);
+    background-color: var(--primary, #B79D6D);
     transition: width 0.3s ease;
 }
 
@@ -58,7 +58,7 @@ body {
 }
 
 .nav-link:hover {
-    color: var(--primary, #715b35);
+    color: var(--primary, #B79D6D);
 }
 
 /* --- Marquee Animation --- */
