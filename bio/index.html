@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Dr. Márcio Faria | Links</title>
+
+    <meta name="description"
+        content="Canais oficiais do Dr. Márcio Faria — Implantodontia Avançada em Moema e Cotia. Agende sua consulta." />
+    <meta name="author" content="Dr. Márcio Faria" />
+    <meta name="theme-color" content="#17343F" />
+
+    <link rel="icon" type="image/svg+xml" href="../assets/img/favicon.svg" />
+    <link rel="apple-touch-icon" href="../assets/img/favicon.svg" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Dr. Márcio Faria | Links" />
+    <meta property="og:description"
+        content="Agende sua consulta, conheça os consultórios e siga o Dr. Márcio Faria nas redes." />
+    <meta property="og:image" content="../assets/img/dr-marcio-faria.webp" />
+    <meta property="og:site_name" content="Dr. Márcio Faria" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Dr. Márcio Faria | Links" />
+    <meta name="twitter:image" content="../assets/img/dr-marcio-faria.webp" />
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,700;1,6..72,400&amp;family=Inter:wght@300;400;500;600&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#B79D6D",
+                        ink: "#17343F",
+                        bg: "#F5F4F0",
+                        surface: "#EFEEEC",
+                    },
+                    fontFamily: {
+                        headline: ["Newsreader", "serif"],
+                        body: ["Inter", "sans-serif"],
+                    },
+                },
+            },
+        };
+    </script>
+    <style>
+        html,
+        body {
+            background: #F5F4F0;
+        }
+
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+
+        /* Ambient halo behind photo */
+        .halo {
+            position: absolute;
+            inset: -30% -30% auto -30%;
+            height: 140%;
+            background:
+                radial-gradient(closest-side, rgba(183, 157, 109, 0.35), transparent 70%);
+            filter: blur(18px);
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        /* Floating photo animation */
+        @keyframes float-y {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        .floating {
+            animation: float-y 4.5s ease-in-out infinite;
+            will-change: transform;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .floating {
+                animation: none;
+            }
+        }
+
+        /* Gentle rise on load */
+        @keyframes rise {
+            from {
+                opacity: 0;
+                transform: translateY(8px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .rise {
+            animation: rise 700ms ease-out both;
+        }
+
+        .rise-delay-1 {
+            animation-delay: 120ms;
+        }
+
+        .rise-delay-2 {
+            animation-delay: 220ms;
+        }
+
+        .rise-delay-3 {
+            animation-delay: 320ms;
+        }
+
+        .rise-delay-4 {
+            animation-delay: 420ms;
+        }
+
+        .rise-delay-5 {
+            animation-delay: 520ms;
+        }
+
+        /* Link pill */
+        .link-pill {
+            transition: transform 300ms cubic-bezier(0.25, 1, 0.5, 1), box-shadow 300ms ease, border-color 300ms ease, background-color 300ms ease;
+        }
+
+        .link-pill:active {
+            transform: scale(0.985);
+        }
+
+        @media (hover: hover) {
+            .link-pill:hover {
+                transform: translateY(-2px);
+                box-shadow: 0 12px 32px rgba(23, 52, 63, 0.10);
+                border-color: rgba(183, 157, 109, 0.45);
+            }
+        }
+
+        /* Primary CTA glow */
+        .cta-primary {
+            box-shadow: 0 10px 28px rgba(183, 157, 109, 0.35);
+        }
+
+        @media (hover: hover) {
+            .cta-primary:hover {
+                box-shadow: 0 0 32px rgba(183, 157, 109, 0.55);
+            }
+        }
+
+        /* Soft divider */
+        .divider {
+            height: 1px;
+            background: linear-gradient(to right, transparent, rgba(23, 52, 63, 0.12), transparent);
+        }
+    </style>
+</head>
+
+<body class="font-body text-ink antialiased">
+
+    <main class="min-h-dvh w-full px-5 pt-10 pb-16 flex flex-col items-center">
+
+        <!-- Wordmark -->
+        <div class="rise text-center mb-8">
+            <span class="block font-headline italic text-primary text-sm tracking-wide">Dr. Márcio Faria</span>
+        </div>
+
+        <!-- Photo -->
+        <section class="relative w-full max-w-md flex flex-col items-center text-center rise rise-delay-1">
+            <div class="relative w-40 h-40 md:w-44 md:h-44">
+                <div class="halo"></div>
+                <div class="floating relative w-full h-full">
+                    <div
+                        class="absolute inset-0 rounded-full border border-primary/30 ring-4 ring-white shadow-[0_18px_40px_rgba(23,52,63,0.18)] overflow-hidden">
+                        <img src="../assets/img/dr-marcio-faria.webp" alt="Dr. Márcio Faria"
+                            class="w-full h-full object-cover" />
+                    </div>
+                </div>
+            </div>
+
+            <!-- Credential chip -->
+            <div
+                class="mt-5 inline-flex items-center gap-2 border border-ink/10 bg-white/70 backdrop-blur px-3.5 py-1.5 rounded-full">
+                <span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                <span class="text-[9px] uppercase tracking-[0.2em] font-bold text-ink/70">CRO 42026 · Especialista</span>
+            </div>
+
+            <h1 class="mt-4 font-headline text-3xl md:text-4xl leading-tight">
+                <span class="italic text-primary">Dr. Márcio Faria</span>
+            </h1>
+            <p class="mt-1.5 text-sm font-light text-ink/70 leading-relaxed max-w-xs">
+                Implantodontia Avançada · Moema &amp; Cotia
+            </p>
+        </section>
+
+        <!-- Links -->
+        <section class="w-full max-w-md mt-10 flex flex-col gap-3">
+
+            <!-- Primary CTA: WhatsApp -->
+            <a href="https://wa.me/5511926202026?text=Olá! Gostaria de agendar uma consulta."
+                target="_blank" rel="noopener"
+                class="rise rise-delay-2 cta-primary link-pill flex items-center justify-center gap-3 px-5 py-4 rounded-2xl bg-primary text-white font-semibold text-[15px] tracking-wide">
+                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true">
+                    <path
+                        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884a9.885 9.885 0 019.885 9.885c0 5.452-4.437 9.884-9.89 9.884m12.016-12.016C24 5.373 18.627 0 12 0S0 5.373 0 12c0 2.123.555 4.117 1.524 5.857L0 24l6.195-1.624C7.837 23.342 9.867 24 12 24c6.627 0 12-5.373 12-12 0-2.133-.556-4.133-1.524-5.857z" />
+                </svg>
+                Agendar Consulta no WhatsApp
+            </a>
+
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/drmarcioa.faria" target="_blank" rel="noopener"
+                class="rise rise-delay-3 link-pill flex items-center gap-4 px-5 py-4 rounded-2xl bg-white border border-ink/10">
+                <span class="w-10 h-10 shrink-0 rounded-xl bg-primary/10 flex items-center justify-center">
+                    <svg class="w-5 h-5 fill-primary" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true">
+                        <path
+                            d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+                    </svg>
+                </span>
+                <div class="flex-1 text-left min-w-0">
+                    <p class="text-[10px] uppercase tracking-[0.18em] text-ink/45 font-bold">Instagram</p>
+                    <p class="text-sm font-medium text-ink truncate">@drmarcioa.faria</p>
+                </div>
+                <span class="material-symbols-outlined text-ink/30 text-lg">arrow_outward</span>
+            </a>
+
+            <!-- Site -->
+            <a href="https://www.drmarciofaria.com.br" target="_blank" rel="noopener"
+                class="rise rise-delay-3 link-pill flex items-center gap-4 px-5 py-4 rounded-2xl bg-white border border-ink/10">
+                <span class="w-10 h-10 shrink-0 rounded-xl bg-primary/10 flex items-center justify-center">
+                    <span class="material-symbols-outlined text-primary text-xl">language</span>
+                </span>
+                <div class="flex-1 text-left min-w-0">
+                    <p class="text-[10px] uppercase tracking-[0.18em] text-ink/45 font-bold">Site oficial</p>
+                    <p class="text-sm font-medium text-ink truncate">drmarciofaria.com.br</p>
+                </div>
+                <span class="material-symbols-outlined text-ink/30 text-lg">arrow_outward</span>
+            </a>
+
+            <!-- Moema -->
+            <a href="https://www.google.com/maps/search/?api=1&query=Av.+Rep%C3%BAblica+do+L%C3%ADbano,+1673,+Moema,+S%C3%A3o+Paulo"
+                target="_blank" rel="noopener"
+                class="rise rise-delay-4 link-pill flex items-center gap-4 px-5 py-4 rounded-2xl bg-white border border-ink/10">
+                <span class="w-10 h-10 shrink-0 rounded-xl bg-primary/10 flex items-center justify-center">
+                    <span class="material-symbols-outlined text-primary text-xl">location_on</span>
+                </span>
+                <div class="flex-1 text-left min-w-0">
+                    <p class="text-[10px] uppercase tracking-[0.18em] text-ink/45 font-bold">Consultório · Moema</p>
+                    <p class="text-sm font-medium text-ink truncate">Av. República do Líbano, 1673</p>
+                </div>
+                <span class="material-symbols-outlined text-ink/30 text-lg">arrow_outward</span>
+            </a>
+
+            <!-- Cotia -->
+            <a href="https://www.google.com/maps/search/?api=1&query=Open+Mall+The+Square,+Rodovia+Raposo+Tavares,+Km+22,+Lajeadinho,+Cotia"
+                target="_blank" rel="noopener"
+                class="rise rise-delay-4 link-pill flex items-center gap-4 px-5 py-4 rounded-2xl bg-white border border-ink/10">
+                <span class="w-10 h-10 shrink-0 rounded-xl bg-primary/10 flex items-center justify-center">
+                    <span class="material-symbols-outlined text-primary text-xl">location_on</span>
+                </span>
+                <div class="flex-1 text-left min-w-0">
+                    <p class="text-[10px] uppercase tracking-[0.18em] text-ink/45 font-bold">Consultório · Cotia</p>
+                    <p class="text-sm font-medium text-ink truncate">Open Mall The Square · Km 22</p>
+                </div>
+                <span class="material-symbols-outlined text-ink/30 text-lg">arrow_outward</span>
+            </a>
+
+            <!-- Email -->
+            <a href="mailto:drmarcioafaria@gmail.com"
+                class="rise rise-delay-5 link-pill flex items-center gap-4 px-5 py-4 rounded-2xl bg-white border border-ink/10">
+                <span class="w-10 h-10 shrink-0 rounded-xl bg-primary/10 flex items-center justify-center">
+                    <span class="material-symbols-outlined text-primary text-xl">mail</span>
+                </span>
+                <div class="flex-1 text-left min-w-0">
+                    <p class="text-[10px] uppercase tracking-[0.18em] text-ink/45 font-bold">Email</p>
+                    <p class="text-sm font-medium text-ink truncate">drmarcioafaria@gmail.com</p>
+                </div>
+                <span class="material-symbols-outlined text-ink/30 text-lg">arrow_outward</span>
+            </a>
+        </section>
+
+        <!-- About -->
+        <section class="w-full max-w-md mt-12 rise rise-delay-5">
+            <div class="flex items-center gap-3 mb-5">
+                <span class="h-px flex-1 bg-ink/10"></span>
+                <span class="text-[10px] uppercase tracking-[0.25em] text-primary font-bold">Sobre o especialista</span>
+                <span class="h-px flex-1 bg-ink/10"></span>
+            </div>
+
+            <p class="text-sm font-light leading-relaxed text-ink/75 text-center px-1">
+                O Dr. Márcio possui trajetória consolidada na odontologia, com forte atuação acadêmica e clínica —
+                de casos simples a reabilitações orais complexas com implantes dentários.
+            </p>
+
+            <div class="mt-6 grid grid-cols-1 gap-2.5">
+                <div class="flex items-start gap-3 p-3.5 bg-white border border-ink/10 rounded-xl">
+                    <span
+                        class="w-8 h-8 shrink-0 rounded-lg bg-primary/10 flex items-center justify-center mt-0.5">
+                        <span class="material-symbols-outlined text-primary text-base">verified</span>
+                    </span>
+                    <div class="flex-1 min-w-0">
+                        <p class="font-headline text-sm text-ink leading-tight">Especialista em Implantodontia</p>
+                        <p class="text-xs text-ink/55 font-light mt-0.5">Pós-graduação especializada</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start gap-3 p-3.5 bg-white border border-ink/10 rounded-xl">
+                    <span
+                        class="w-8 h-8 shrink-0 rounded-lg bg-primary/10 flex items-center justify-center mt-0.5">
+                        <span class="material-symbols-outlined text-primary text-base">school</span>
+                    </span>
+                    <div class="flex-1 min-w-0">
+                        <p class="font-headline text-sm text-ink leading-tight">Mestre em Cirurgia Bucal</p>
+                        <p class="text-xs text-ink/55 font-light mt-0.5">Mestrado em cirurgia</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start gap-3 p-3.5 bg-white border border-ink/10 rounded-xl">
+                    <span
+                        class="w-8 h-8 shrink-0 rounded-lg bg-primary/10 flex items-center justify-center mt-0.5">
+                        <span class="material-symbols-outlined text-primary text-base">trending_up</span>
+                    </span>
+                    <div class="flex-1 min-w-0">
+                        <p class="font-headline text-sm text-ink leading-tight">Doutor em Ciências pela UNIFESP</p>
+                        <p class="text-xs text-ink/55 font-light mt-0.5">Pesquisa científica avançada</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="w-full max-w-md mt-12 flex flex-col items-center gap-4 text-center">
+            <div class="divider w-2/3"></div>
+            <p class="text-[10px] uppercase tracking-[0.2em] text-ink/40 font-light">
+                &copy; 2026 Dr. Márcio Faria
+            </p>
+            <a href="https://wa.me/5573981196220?text=Olá! Vi o site que desenvolveu para o Dr. Marcio e gostaria de fazer um orçamento com vocês."
+                target="_blank" rel="noopener"
+                class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-ink/10 bg-white/60 backdrop-blur text-[9px] uppercase tracking-[0.15em] text-ink/45 font-light hover:text-ink/70 transition-colors">
+                Site desenvolvido por
+                <span class="text-ink/70 font-semibold">SitesCIA</span>
+            </a>
+        </footer>
+
+    </main>
+
+</body>
+
+</html>
